@@ -27,7 +27,7 @@
 	background-color: #3a6e68;
 }
 
-.navbar a, .navbar svg, .navbar {
+.navbar a, .navbar svg, .navbar .bi {
     color: white !important;
 }
 

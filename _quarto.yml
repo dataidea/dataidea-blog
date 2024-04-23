@@ -30,7 +30,7 @@ website:
       - text: Resources
         menu:
          - text: Materials
-           url: 'https://api.dataidea.org/school/download-course-material/2'
+           url: 'https://courses.dataidea.org/'
          - text: Blog
            url: 'https://blog.dataidea.org'
          - text: Forum
