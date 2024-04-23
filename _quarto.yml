@@ -38,7 +38,7 @@ website:
         href: 'https://docs.dataidea.org/contact'
 format:
   html:
-    theme: minty
+    theme: cosmo
     css: styles.css
     toc: true
 
