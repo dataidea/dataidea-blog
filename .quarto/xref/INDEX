@@ -13,5 +13,17 @@
   },
   "posts/Puns Only Programmers Will Get/index.qmd": {
     "index.html": "2d37e90b"
+  },
+  "dataidea-blog/nbs/00_core.ipynb": {
+    "00_core.html": "5447a3a4"
+  },
+  "dataidea-blog/nbs/index.ipynb": {
+    "index.html": "77b7cec4"
+  },
+  "posts/fun/Puns Only Programmers Will Get/index.qmd": {
+    "index.html": "e7161836"
+  },
+  "posts/Fun Stuff/Puns Only Programmers Will Get/index.qmd": {
+    "index.html": "f58451bd"
   }
 }

@@ -8,15 +8,10 @@ website:
   page-navigation: true
   back-to-top-navigation: true
   sidebar:
-      style: "floating"
-      collapse-level: 2
-      contents:
-        - section: "Python"
-          contents: Python/*
-        - section: "Data Analysis"
-          contents: Data Analysis/*
-        - section: "Web Development"
-          contents: Web Development/*
+    contents:
+      - section: Fun Stuff
+        contents:
+          - posts/Fun Stuff/Puns Only Programmers Will Get/index.qmd
   navbar:
     right:
       - about.qmd
@@ -25,7 +20,7 @@ website:
       - text: Home
         href: 'https://www.dataidea.org/'
       - text: About
-        href: 'https://docs.dataidea.org/about'
+        href: 'https://courses.dataidea.org/about'
       - text: Resources
         menu:
          - text: Materials
@@ -35,7 +30,7 @@ website:
          - text: Forum
            url: 'https://chat.whatsapp.com/GuCZRyJICgO3Y7MPvDQKhi'
       - text: Contact
-        href: 'https://docs.dataidea.org/contact'
+        href: 'https://courses.dataidea.org/contact'
 format:
   html:
     theme: cosmo

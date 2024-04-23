@@ -25,13 +25,16 @@
 
 .navbar {
 	background-color: #3a6e68;
-	display: flex;
 }
 
-
-.navbar-title, .navbar svg{
- color: white; 
+.navbar a, .navbar svg, .navbar {
+    color: white !important;
 }
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
 
 p, a, li {
 	font-family: "futura";
