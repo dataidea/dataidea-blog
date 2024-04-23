@@ -35,6 +35,10 @@
     color: white !important;
 }
 
+.navbar .dropdown-item {
+color: #343a40 !important;
+}
+
 
 p, a, li {
 	font-family: "futura";
