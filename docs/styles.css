@@ -23,21 +23,14 @@
     format("truetype");
 }
 
-
-
 .navbar {
 	background-color: #3a6e68;
 	display: flex;
-	font-size: 12px; 
 }
 
 
 .navbar-title, .navbar svg{
  color: white; 
-}
-
-*, span {
-  font-size: 12px; 
 }
 
 p, a, li {
