@@ -13,12 +13,13 @@ website:
   description: "DATAIDEA Blog"
   repo-branch: main
   repo-url: "https://github.com/dataidea/dataidea-blog"
+  logo: assets/dataidea-logo.png
   sidebar:
     contents:
       - section: Fun Stuff
         contents:
           - posts/Fun Stuff/Puns Only Programmers Will Get/index.qmd
-      - section: Fun Stuff
+      - section: Software
         contents:
           - posts/Software/Top 5 Operating Systems/index.qmd
   navbar:
