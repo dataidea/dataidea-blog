@@ -12,7 +12,7 @@ website:
   site-url: "https://blog.dataidea.org/dataidea-blog"
   description: "DATAIDEA Blog"
   repo-branch: main
-  repo-url: "https://github.com/dataidea/programming-for-data-science-site"
+  repo-url: "https://github.com/dataidea/dataidea-blog"
   sidebar:
     contents:
       - section: Fun Stuff
@@ -23,7 +23,6 @@ website:
           - posts/Software/Top 5 Operating Systems/index.qmd
   navbar:
     right:
-      - about.qmd
       - text: Home
         href: 'https://www.dataidea.org/'
       - text: About
