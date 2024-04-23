@@ -6,13 +6,13 @@ about:
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://twitter.com/datas_idea
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://linkedin.com/company/dataidea
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/dataidea
 
 ---
 
