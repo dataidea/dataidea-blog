@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Welcome to the DATAIDEA blog",
     "section": "",
-    "text": "Puns Only Programmers Will Get\n\n\n\n\n\n\nFun Stuff\n\n\n\n\n\n\n\n\n\nApr 20, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\n\n\n\n\n\n\nTo 5 Operating Systems\n\n\n\n\n\n\nSoftware\n\n\n\n\n\n\n\n\n\nJan 10, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Puns Only Programmers Will Get\n\n\n\n\n\n\nFun Stuff\n\n\n\n\n\n\n\n\n\nApr 20, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\n\n\n\n\n\n\nAll Software used in Mr. Robot\n\n\n\n\n\n\nSoftware\n\n\n\n\n\n\n\n\n\nFeb 20, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\n\n\n\n\n\n\nTo 5 Operating Systems\n\n\n\n\n\n\nSoftware\n\n\n\n\n\n\n\n\n\nJan 10, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "posts/Fun Stuff/Puns Only Programmers Will Get/index.html",
@@ -19,6 +19,210 @@
     ]
   },
   {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html",
+    "title": "All Software used in Mr. Robot",
+    "section": "",
+    "text": "Thumbnail\nHere’s a list of the most popular softwares used by the hackers in the Emmy and Golden Globe award winning drama/thriller series Mr. Robot.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#kali-linux",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#kali-linux",
+    "title": "All Software used in Mr. Robot",
+    "section": "Kali Linux",
+    "text": "Kali Linux\nKali Linux is a Linux distro made for security researchers for penetration testing, but is also used by hackers since it is jam packed with hacking tools. It is regularly featured in Mr. Robot since it is the hackers’ operating system of choice.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#tor-browser",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#tor-browser",
+    "title": "All Software used in Mr. Robot",
+    "section": "Tor Browser",
+    "text": "Tor Browser\nTor Browser is widely considered to be the best anonymizing tool out there. It will make your Internet activity very hard to trace, which fsociety takes advantage of when Trenton in season 2, episode 8 uploads a leaked FBI conference call about illegal mass surveillance to Vimeo using Tor Browser.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#raspberry-pi",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#raspberry-pi",
+    "title": "All Software used in Mr. Robot",
+    "section": "Raspberry Pi",
+    "text": "Raspberry Pi\nRaspberry Pi is a small, programmable computer board designed to teach children about computer science. It is also favourite among hobbyists and programmers due to its low-cost, versatility and simplicity. In season 1, episode 5 Elliot installs a Raspberry Pi into Steel Mountain’s climate control system so that fsociety at a later point in time can remotely raise the temperature in the storage room where Evil Corp’s tape backups are stored, resulting in the backups of the records of a significant portion of the US’ consumer debt being destroyed.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#proton-mail",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#proton-mail",
+    "title": "All Software used in Mr. Robot",
+    "section": "Proton Mail",
+    "text": "Proton Mail\nProtonMail is a secure, end-to-end encrypted e-mail service based in Switzerland that is used by Elliot in season 1, episode 8. The team behind Mr. Robot researched secure e-mail services to the extent that they actually contacted the ProtonMail developers and asked if it was possible for users to monitor their own e-mail activity in ProtonMail. The ProtonMail developers liked the idea of account access logs so much that they ended up implementing it in their v2.0 release of ProtonMail.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#pycharm",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#pycharm",
+    "title": "All Software used in Mr. Robot",
+    "section": "PyCharm",
+    "text": "PyCharm\nPyCharm is a Python and Django IDE (Integrated Developer Environment), which is a type of code editor software. It is used by Trenton in season 1, episode 4.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#bluesniff",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#bluesniff",
+    "title": "All Software used in Mr. Robot",
+    "section": "Bluesniff",
+    "text": "Bluesniff\nBluesniff is a Bluetooth device discovery tool. In season 1, episode 6 Elliot uses Bluesniff in combination with btscanner and Metasploit when he connects to the computer in a nearby police car via a MultiBlue Bluetooth USB Dongle to compromise a prison’s network in order to break a drug dealer called Vera out of prison.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#btscanner",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#btscanner",
+    "title": "All Software used in Mr. Robot",
+    "section": "btscanner",
+    "text": "btscanner\nbtscanner is a tool that is included in Kali Linux that extracts as much information as possible about Bluetooth devices without having to pair. In season 1, episode 6 Elliot uses btscanner in combination with Bluesniff and Metasploit when he connects to the computer in a nearby police car using a MultiBlue Bluetooth USB Dongle to compromise a prison’s network in order to break a drug dealer called Vera out of prison.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#mozilla-firefox",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#mozilla-firefox",
+    "title": "All Software used in Mr. Robot",
+    "section": "Mozilla Firefox",
+    "text": "Mozilla Firefox\nElliot uses Firefox as his default web browser. Trenton uses Firefox in season 2, episode 8.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#vlc-media-player",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#vlc-media-player",
+    "title": "All Software used in Mr. Robot",
+    "section": "VLC Media Player",
+    "text": "VLC Media Player\nVLC Media Player was used in season 2, episode 4 when Elliot and Darlene watched a VHS rip of the fake horror movie Careful Massacre of the Bourgeoisie together. VLC is also used in season 2, episode 8 when fsociety preview the video they are about to upload a leaked FBI conference call about illegal mass surveillance.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#µtorrent",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#µtorrent",
+    "title": "All Software used in Mr. Robot",
+    "section": "µTorrent",
+    "text": "µTorrent\nIn season 2, episode 4 Darlene was downloading a VHS rip of the fake horror movie Careful Massacre of the Bourgeoisie using µTorrent.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#flexispy",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#flexispy",
+    "title": "All Software used in Mr. Robot",
+    "section": "FlexiSPY",
+    "text": "FlexiSPY\nFlexiSPY is a spyware software for Android, iOS and BlackBerry that lets the user monitor all activities on the victims phone. In season 1, episode 3 Tyrell Wellick covertly installs it on a co-worker’s Android phone in order to get access to secret information about who is going to be the next chief technology officer of Evil Corp.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#kingoroot",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#kingoroot",
+    "title": "All Software used in Mr. Robot",
+    "section": "KingoRoot",
+    "text": "KingoRoot\nKingo Root is used by Tyrell Wellick in season 1, episode 3 to root a co-worker’s Android phone so that he can covertly install the FlexiSPY spyware on the phone in order to get access to secret information about who is going to be the next chief technology officer of Evil Corp.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#kvm-kernel-based-virtual-machine",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#kvm-kernel-based-virtual-machine",
+    "title": "All Software used in Mr. Robot",
+    "section": "KVM (Kernel-based Virtual Machine)",
+    "text": "KVM (Kernel-based Virtual Machine)\nKVM is a hypervisor, which is a software that can run other operating systems via virtual machines. Elliot uses KVM to virtualize Windows 7 inside of Kali Linux. In season 1, episode 6 Elliot uses KVM to run Metasploit and Metapreter and in season 1, episode 8 he uses KVM to run DeepSound.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#metasploit",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#metasploit",
+    "title": "All Software used in Mr. Robot",
+    "section": "Metasploit",
+    "text": "Metasploit\nMetasploit Framework is a software included in Kali Linux that makes it easier to discover vulnerabilities in networks for penetration testers. Meterpreter is one of several hundreds of payloads that can be run in the Metasploit Framework and it is used in season 1, episode 6. In season 1, episode 6 Elliot uses Metasploit Framwork and Metapreter in combination with btscanner and Bluesniff when he connects to the computer in a nearby police car via a MultiBlue Bluetooth USB Dongle to compromise a prison’s network in order to break a drug dealer called Vera out of prison.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#framaroot",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#framaroot",
+    "title": "All Software used in Mr. Robot",
+    "section": "Framaroot",
+    "text": "Framaroot\nFramaroot - called RooterFrame in the show - is used by Tyrell Wellick in season 1, episode 3 to root a co-worker’s Android phone so that he can covertly install the FlexiSPY spyware on the phone in order to get access to secret information about who is going to be the next chief technology officer of Evil Corp.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
+    "objectID": "posts/Software/All Software Used in Mr. Robot/index.html#supersu",
+    "href": "posts/Software/All Software Used in Mr. Robot/index.html#supersu",
+    "title": "All Software used in Mr. Robot",
+    "section": "SuperSU",
+    "text": "SuperSU\nSuperSU is an app that managed superuser privileges on rooted Android phones. In season 1, episode 3 Tyrell Wellick covertly installs FlexiSPY - which uses SuperSU to give itself superuser access - on a co-worker’s Android phone in order to get access to secret information about who is going to be the next chief technology officer of Evil Corp.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "All Software used in Mr. Robot"
+    ]
+  },
+  {
     "objectID": "posts/Software/Top 5 Operating Systems/index.html",
     "href": "posts/Software/Top 5 Operating Systems/index.html",
     "title": "To 5 Operating Systems",
@@ -26,7 +230,7 @@
     "text": "Thumbnail\nOperating systems are the backbone of modern computing, providing the fundamental software foundation for computers, smartphones, servers, and more. Here’s a comprehensive overview of five prominent operating systems that have made significant impacts in various domains.",
     "crumbs": [
       "Home",
-      "Fun Stuff",
+      "Software",
       "To 5 Operating Systems"
     ]
   },
@@ -38,7 +242,7 @@
     "text": "Windows\n\nOverview\nDeveloped by Microsoft, Windows is one of the most widely used operating systems across PCs, servers, and embedded systems. Known for its user-friendly interface and extensive software compatibility, Windows offers a variety of versions tailored for different devices and use cases.\n\n\nFeatures\n\nGUI: Graphical User Interface for intuitive navigation.\nCompatibility: Broad support for software and hardware.\nSecurity: Regular updates and security features.",
     "crumbs": [
       "Home",
-      "Fun Stuff",
+      "Software",
       "To 5 Operating Systems"
     ]
   },
@@ -50,7 +254,7 @@
     "text": "macOS\n\nOverview\nExclusive to Apple’s hardware, macOS offers a sleek and intuitive user experience. It is known for its stability, design aesthetics, and seamless integration with other Apple devices and services.\n\n\nFeatures\n\nIntegration: Seamless integration with other Apple devices.\nPerformance: Optimized for Mac hardware.\nSecurity: Built-in encryption and privacy features.",
     "crumbs": [
       "Home",
-      "Fun Stuff",
+      "Software",
       "To 5 Operating Systems"
     ]
   },
@@ -62,7 +266,7 @@
     "text": "Linux\n\nOverview\nLinux is an open-source operating system available in various distributions (distros), catering to diverse user needs. Its flexibility, stability, and robustness have made it a favorite among developers, server administrators, and tech enthusiasts.\n\n\nFeatures\n\nOpen Source: Community-driven development and customization.\nVariety: Diverse distributions catering to different needs.\nStability: Known for reliability and performance.",
     "crumbs": [
       "Home",
-      "Fun Stuff",
+      "Software",
       "To 5 Operating Systems"
     ]
   },
@@ -74,7 +278,7 @@
     "text": "Android\n\nOverview\nDeveloped by Google, Android is the leading operating system for mobile devices globally. Its open-source nature, customizable interface, and extensive app ecosystem have made it a dominant force in the mobile market.\n\n\nFeatures\n\nCustomization: Ability to personalize interface and features.\nApp Ecosystem: Extensive library of applications.\nIntegration: Seamless integration with Google services.",
     "crumbs": [
       "Home",
-      "Fun Stuff",
+      "Software",
       "To 5 Operating Systems"
     ]
   },
@@ -86,7 +290,7 @@
     "text": "iOS/iPadOS\n\nOverview\nExclusive to Apple’s mobile devices, iOS and iPadOS are renowned for their smooth performance, security features, and seamless integration within the Apple ecosystem.\n\n\nFeatures\n\nPerformance: Smooth and efficient operation on Apple devices.\nSecurity: Robust security measures and privacy controls.\nEcosystem Integration: Seamless integration with other Apple devices.\n\nIn conclusion, these operating systems showcase diversity in terms of architecture, platform support, and features, catering to the varied needs of users across different devices and industries.",
     "crumbs": [
       "Home",
-      "Fun Stuff",
+      "Software",
       "To 5 Operating Systems"
     ]
   },

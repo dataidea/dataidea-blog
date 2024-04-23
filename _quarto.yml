@@ -13,7 +13,6 @@ website:
   description: "DATAIDEA Blog"
   repo-branch: main
   repo-url: "https://github.com/dataidea/dataidea-blog"
-  logo: assets/dataidea-logo.png
   sidebar:
     contents:
       - section: Fun Stuff
@@ -22,7 +21,9 @@ website:
       - section: Software
         contents:
           - posts/Software/Top 5 Operating Systems/index.qmd
+          - posts/Software/All Software Used in Mr. Robot/index.qmd
   navbar:
+    logo: assets/dataidea-logo.png
     right:
       - text: Home
         href: 'https://www.dataidea.org/'
