@@ -2,7 +2,7 @@
 title: Puns Only Programmers Will Get
 author: "Juma Shafara"
 date: "2024-04-20"
-categories: [fun stuff]
+categories: [Fun Stuff]
 ---
 
 ![Thumbnail](thumbnail.jpg)
