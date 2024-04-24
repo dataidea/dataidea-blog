@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -287,11 +321,11 @@ ul.task-list li input[type="checkbox"] {
 <p>Missing data is a common hurdle in data analysis, impacting the reliability of insights drawn from datasets. Python offers a range of solutions to address this issue, some of which we discussed in the earlier weeks. In this notebook, we look into the top three missing data imputation methods in Python—SimpleImputer, KNNImputer, and IterativeImputer from scikit-learn—providing insights into their functionalities and practical considerations. We’ll explore these essential techniques, using the weather dataset.</p>
 <pre><code># install the libraries for this demonstration
 ! pip install dataidea==0.2.5</code></pre>
-<pre><code>from dataidea.packages import * 
-from dataidea.datasets import loadDataset</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dataidea.packages <span class="im">import</span> <span class="op">*</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dataidea.datasets <span class="im">import</span> loadDataset</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>from dataidea.packages import *</code> imports for us np, pd, plt, etc. <code>loadDataset</code> allows us to load datasets inbuilt in the dataidea library</p>
-<pre><code>weather = loadDataset('weather') </code></pre>
-<pre><code>weather</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>weather <span class="op">=</span> loadDataset(<span class="st">'weather'</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>weather</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div>
 
 <table class="dataframe table table-sm table-striped small">
@@ -470,16 +504,16 @@ Sunny
 </tbody>
 </table>
 </div>
-<pre><code>weather.isna().sum()</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>weather.isna().<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>day            0
 temperature    4
 windspead      4
 event          2
 dtype: int64</code></pre>
 <p>Let’s demonstrate how to use the top three missing data imputation methods—SimpleImputer, KNNImputer, and IterativeImputer—using the simple weather dataset.</p>
-<pre><code># select age from the data
-temp_wind = weather[['temperature', 'windspead']].copy()</code></pre>
-<pre><code>temp_wind_imputed = temp_wind.copy()</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># select age from the data</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>temp_wind <span class="op">=</span> weather[[<span class="st">'temperature'</span>, <span class="st">'windspead'</span>]].copy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>temp_wind_imputed <span class="op">=</span> temp_wind.copy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="simpleimputer-from-scikit-learn" class="level2">
 <h2 class="anchored" data-anchor-id="simpleimputer-from-scikit-learn">SimpleImputer from scikit-learn:</h2>
@@ -498,14 +532,14 @@ temp_wind = weather[['temperature', 'windspead']].copy()</code></pre>
 </ul></li>
 <li><strong>Example</strong>:</li>
 </ul>
-<pre><code>from sklearn.impute import SimpleImputer
-
-simple_imputer = SimpleImputer(strategy='mean')
-temp_wind_simple_imputed = simple_imputer.fit_transform(temp_wind)
-
-temp_wind_simple_imputed_df = pd.DataFrame(temp_wind_simple_imputed, columns=temp_wind.columns)</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.impute <span class="im">import</span> SimpleImputer</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>simple_imputer <span class="op">=</span> SimpleImputer(strategy<span class="op">=</span><span class="st">'mean'</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>temp_wind_simple_imputed <span class="op">=</span> simple_imputer.fit_transform(temp_wind)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>temp_wind_simple_imputed_df <span class="op">=</span> pd.DataFrame(temp_wind_simple_imputed, columns<span class="op">=</span>temp_wind.columns)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Let’s have a look at the outcome</p>
-<pre><code>temp_wind_simple_imputed_df</code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>temp_wind_simple_imputed_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div>
 
 <table class="dataframe table table-sm table-striped small">
@@ -641,14 +675,14 @@ windspead
 </ul></li>
 <li><strong>Example</strong>:</li>
 </ul>
-<pre><code>from sklearn.impute import KNNImputer
-
-knn_imputer = KNNImputer(n_neighbors=2)
-temp_wind_knn_imputed = knn_imputer.fit_transform(temp_wind)
-
-temp_wind_knn_imputed_df = pd.DataFrame(temp_wind_knn_imputed, columns=temp_wind.columns)</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.impute <span class="im">import</span> KNNImputer</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>knn_imputer <span class="op">=</span> KNNImputer(n_neighbors<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>temp_wind_knn_imputed <span class="op">=</span> knn_imputer.fit_transform(temp_wind)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>temp_wind_knn_imputed_df <span class="op">=</span> pd.DataFrame(temp_wind_knn_imputed, columns<span class="op">=</span>temp_wind.columns)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>If we take a look at the outcome</p>
-<pre><code>temp_wind_knn_imputed_df</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>temp_wind_knn_imputed_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div>
 
 <table class="dataframe table table-sm table-striped small">
@@ -784,15 +818,15 @@ windspead
 </ul></li>
 <li><strong>Example</strong>:</li>
 </ul>
-<pre><code>from sklearn.experimental import enable_iterative_imputer
-from sklearn.impute import IterativeImputer
-
-iterative_imputer = IterativeImputer()
-temp_wind_iterative_imputed = iterative_imputer.fit_transform(temp_wind)
-
-temp_wind_iterative_imputed_df = pd.DataFrame(temp_wind_iterative_imputed, columns=temp_wind.columns)</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.experimental <span class="im">import</span> enable_iterative_imputer</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.impute <span class="im">import</span> IterativeImputer</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>iterative_imputer <span class="op">=</span> IterativeImputer()</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>temp_wind_iterative_imputed <span class="op">=</span> iterative_imputer.fit_transform(temp_wind)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>temp_wind_iterative_imputed_df <span class="op">=</span> pd.DataFrame(temp_wind_iterative_imputed, columns<span class="op">=</span>temp_wind.columns)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Let’s take a look at the outcome</p>
-<pre><code>temp_wind_iterative_imputed_df</code></pre>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>temp_wind_iterative_imputed_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div>
 
 <table class="dataframe table table-sm table-striped small">
@@ -915,10 +949,10 @@ windspead
 <section id="datawig" class="level2">
 <h2 class="anchored" data-anchor-id="datawig">Datawig:</h2>
 <p>Datawig is a library specifically designed for imputing missing values in tabular data using deep learning models.</p>
-<pre><code># import datawig
-
-# # Impute missing values
-# df_imputed = datawig.SimpleImputer.complete(weather)</code></pre>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import datawig</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co"># # Impute missing values</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># df_imputed = datawig.SimpleImputer.complete(weather)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>These top imputation methods offer different trade-offs in terms of computational complexity, handling of missing data patterns, and ease of use. The choice between them depends on the specific characteristics of the dataset and the requirements of the analysis.</p>
 </section>
 <section id="homework" class="level2">

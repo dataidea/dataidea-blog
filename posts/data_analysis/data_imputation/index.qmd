@@ -20,7 +20,7 @@ Missing data is a common hurdle in data analysis, impacting the reliability of i
 ```
 
 
-```
+```python
 from dataidea.packages import * 
 from dataidea.datasets import loadDataset
 ```
@@ -28,12 +28,12 @@ from dataidea.datasets import loadDataset
 `from dataidea.packages import *` imports for us np, pd, plt, etc. `loadDataset` allows us to load datasets inbuilt in the dataidea library
 
 
-```
+```python
 weather = loadDataset('weather') 
 ```
 
 
-```
+```python
 weather
 ```
 
@@ -135,7 +135,7 @@ weather
 
 
 
-```
+```python
 weather.isna().sum()
 ```
 
@@ -153,13 +153,13 @@ weather.isna().sum()
 Let's demonstrate how to use the top three missing data imputation methods—SimpleImputer, KNNImputer, and IterativeImputer—using the simple weather dataset.
 
 
-```
+```python
 # select age from the data
 temp_wind = weather[['temperature', 'windspead']].copy()
 ```
 
 
-```
+```python
 temp_wind_imputed = temp_wind.copy()
 ```
 
@@ -175,7 +175,7 @@ temp_wind_imputed = temp_wind.copy()
    - **Example**:
 
 
-```
+```python
 from sklearn.impute import SimpleImputer
 
 simple_imputer = SimpleImputer(strategy='mean')
@@ -187,7 +187,7 @@ temp_wind_simple_imputed_df = pd.DataFrame(temp_wind_simple_imputed, columns=tem
 Let's have a look at the outcome
 
 
-```
+```python
 temp_wind_simple_imputed_df
 ```
 
@@ -279,7 +279,7 @@ temp_wind_simple_imputed_df
    - **Example**:
 
 
-```
+```python
 from sklearn.impute import KNNImputer
 
 knn_imputer = KNNImputer(n_neighbors=2)
@@ -291,7 +291,7 @@ temp_wind_knn_imputed_df = pd.DataFrame(temp_wind_knn_imputed, columns=temp_wind
 If we take a look at the outcome
 
 
-```
+```python
 temp_wind_knn_imputed_df
 ```
 
@@ -383,7 +383,7 @@ temp_wind_knn_imputed_df
    - **Example**:
 
 
-```
+```python
 from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer
 
@@ -396,7 +396,7 @@ temp_wind_iterative_imputed_df = pd.DataFrame(temp_wind_iterative_imputed, colum
 Let's take a look at the outcome 
 
 
-```
+```python
 temp_wind_iterative_imputed_df
 ```
 
@@ -482,7 +482,7 @@ temp_wind_iterative_imputed_df
 Datawig is a library specifically designed for imputing missing values in tabular data using deep learning models.
 
 
-```
+```python
 # import datawig
 
 # # Impute missing values
