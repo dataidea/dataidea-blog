@@ -493,3 +493,37 @@ These top imputation methods offer different trade-offs in terms of computationa
 
 ## Homework
 - Try out these techniques for categorical data
+
+
+## Credit
+
+#### Do you seriously want to learn Programming and Data Analysis with Python?
+
+If you’re serious about learning Programming, Data Analysis with Python and getting prepared for Data Science roles, I highly encourage you to enroll in my Programming for Data Science Course, which I've taught to hundreds of students. Don’t waste your time following disconnected, outdated tutorials
+
+My Complete Programming for Data Science Course has everything you need in one place. 
+
+The course offers:
+
+- Duration: Usually 3-4 months
+- Sessions: Four times a week (one on one)
+- Location: Online or/and at UMF House, Sir Apollo Kagwa Road
+
+What you'l learn:
+
+- Fundamentals of programming
+- Data manipulation and analysis
+- Visualization techniques
+- Introduction to machine learning
+- Database Management with SQL (optional)
+- Web Development with Django (optional)
+
+Best
+
+Juma Shafara
+
+Data Scientist, Instructor
+
+jumashafara0@gmail.com / dataideaorg@gmail.com
+
++256701520768 / +256771754118
