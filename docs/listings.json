@@ -3,9 +3,9 @@
     "listing": "/index.html",
     "items": [
       "/posts/data_analysis/data_imputation/index.html",
-      "/posts/fun_stuff/Puns Only Programmers Will Get/index.html",
-      "/posts/software/All Software Used in Mr. Robot/index.html",
-      "/posts/software/Top 5 Operating Systems/index.html"
+      "/posts/fun_stuff/programmer_puns/index.html",
+      "/posts/software/mr_robot_softwares/index.html",
+      "/posts/software/top_5_operating_systems/index.html"
     ]
   }
 ]

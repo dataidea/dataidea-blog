@@ -5,7 +5,7 @@ date: "2024-01-10"
 categories: [Software]
 ---
 
-![Thumbnail](thumbnail.jpg)
+![Thumbnail](operating_systems.png)
 
 Operating systems are the backbone of modern computing, providing the fundamental software foundation for computers, smartphones, servers, and more. Here's a comprehensive overview of five prominent operating systems that have made significant impacts in various domains.
 

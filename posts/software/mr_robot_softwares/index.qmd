@@ -5,7 +5,7 @@ date: "2024-02-20"
 categories: [Software]
 ---
 
-![Thumbnail](thumbnail.jpg)
+![Thumbnail](mr_robot.png)
 
 Here's a list of the most popular softwares used by the hackers in the Emmy and Golden Globe award winning drama/thriller series Mr. Robot.
 

@@ -10,18 +10,18 @@ website:
   back-to-top-navigation: true
   reader-mode: true
   site-url: "https://blog.dataidea.org/dataidea-blog"
-  description: "DATAIDEA Blog"
+  description: "Learn Programming For Data Science"
   repo-branch: main
   repo-url: "https://github.com/dataidea/dataidea-blog"
   sidebar:
     contents:
       - section: Fun Stuff
         contents:
-          - posts/fun_stuff/Puns Only Programmers Will Get/index.qmd
+          - posts/fun_stuff/programmer_puns/index.qmd
       - section: Software
         contents:
-          - posts/software/Top 5 Operating Systems/index.qmd
-          - posts/software/All Software Used in Mr. Robot/index.qmd
+          - posts/software/top_5_operating_systems/index.qmd
+          - posts/software/mr_robot_softwares/index.qmd
       - section: Data Analysis
         contents:
           - "posts/data_analysis/data_imputation/index.qmd"

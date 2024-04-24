@@ -7,7 +7,7 @@ categories: [Data Analysis]
 
 ## Handling Missing Data
 
-![Thumbnail](imputation.webp)
+![Photo by DATAIDEA](handling_missing_data.png)
 
 ## Introduction:
 
