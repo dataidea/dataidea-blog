@@ -187,6 +187,18 @@
     ]
   },
   {
+    "objectID": "posts/data_analysis/data_imputation/index.html#credit",
+    "href": "posts/data_analysis/data_imputation/index.html#credit",
+    "title": "Handling Missing Data",
+    "section": "Credit",
+    "text": "Credit\n\nDo you seriously want to learn Programming and Data Analysis with Python?\nIf you’re serious about learning Programming, Data Analysis with Python and getting prepared for Data Science roles, I highly encourage you to enroll in my Programming for Data Science Course, which I’ve taught to hundreds of students. Don’t waste your time following disconnected, outdated tutorials\nMy Complete Programming for Data Science Course has everything you need in one place.\nThe course offers:\n\nDuration: Usually 3-4 months\nSessions: Four times a week (one on one)\nLocation: Online or/and at UMF House, Sir Apollo Kagwa Road\n\nWhat you’l learn:\n\nFundamentals of programming\nData manipulation and analysis\nVisualization techniques\nIntroduction to machine learning\nDatabase Management with SQL (optional)\nWeb Development with Django (optional)\n\nBest\nJuma Shafara\nData Scientist, Instructor\njumashafara0@gmail.com / dataideaorg@gmail.com\n+256701520768 / +256771754118",
+    "crumbs": [
+      "Home",
+      "Data Analysis",
+      "Handling Missing Data"
+    ]
+  },
+  {
     "objectID": "posts/software/All Software Used in Mr. Robot/index.html",
     "href": "posts/software/All Software Used in Mr. Robot/index.html",
     "title": "All Software used in Mr. Robot",
@@ -396,17 +408,5 @@
     "title": "About",
     "section": "",
     "text": "About this blog\n\n\n Back to top"
-  },
-  {
-    "objectID": "posts/data_analysis/data_imputation/index.html#credit",
-    "href": "posts/data_analysis/data_imputation/index.html#credit",
-    "title": "Handling Missing Data",
-    "section": "Credit",
-    "text": "Credit\n\nDo you seriously want to learn Programming and Data Analysis with Python?\nIf you’re serious about learning Programming, Data Analysis with Python and getting prepared for Data Science roles, I highly encourage you to enroll in my Programming for Data Science Course, which I’ve taught to hundreds of students. Don’t waste your time following disconnected, outdated tutorials\nMy Complete Programming for Data Science Course has everything you need in one place.\nThe course offers:\n\nDuration: Usually 3-4 months\nSessions: Four times a week (one on one)\nLocation: Online or/and at UMF House, Sir Apollo Kagwa Road\n\nWhat you’l learn:\n\nFundamentals of programming\nData manipulation and analysis\nVisualization techniques\nIntroduction to machine learning\nDatabase Management with SQL (optional)\nWeb Development with Django (optional)\n\nBest\nJuma Shafara\nData Scientist, Instructor\njumashafara0@gmail.com / dataideaorg@gmail.com\n+256701520768 / +256771754118",
-    "crumbs": [
-      "Home",
-      "Data Analysis",
-      "Handling Missing Data"
-    ]
   }
 ]

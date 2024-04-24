@@ -26,7 +26,6 @@ website:
         contents:
           - "posts/data_analysis/data_imputation/index.qmd"
   navbar:
-    logo: assets/dataidea-logo.png
     right:
       - text: Home
         href: 'https://www.dataidea.org/'
