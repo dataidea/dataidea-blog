@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Juma Shafara">
-<meta name="dcterms.date" content="2024-04-20">
+<meta name="dcterms.date" content="2024-04-24">
 
-<title>DATAIDEA - Puns Only Programmers Will Get</title>
+<title>DATAIDEA - Handling Missing Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../posts/Software/Top 5 Operating Systems/index.html" rel="next">
+<link href="../../../posts/software/All Software Used in Mr. Robot/index.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -147,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Puns Only Programmers Will Get</h1>
+          <h1 class="quarto-secondary-nav-title">Handling Missing Data</h1>
         </a>     
     </div>
   </nav>
@@ -156,9 +156,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Puns Only Programmers Will Get</h1>
+      <h1 class="title d-none d-lg-block">Handling Missing Data</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Fun Stuff</div>
+                <div class="quarto-category">Data Analysis</div>
               </div>
                   </div>
   </div>
@@ -176,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">April 20, 2024</p>
+        <p class="date">April 24, 2024</p>
       </div>
     </div>
     
@@ -200,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts/Fun Stuff/Puns Only Programmers Will Get/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../posts/fun_stuff/Puns Only Programmers Will Get/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Puns Only Programmers Will Get</span></a>
   </div>
 </li>
@@ -217,14 +217,31 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts/Software/Top 5 Operating Systems/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../posts/software/Top 5 Operating Systems/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">To 5 Operating Systems</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts/Software/All Software Used in Mr. Robot/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../posts/software/All Software Used in Mr. Robot/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">All Software used in Mr.&nbsp;Robot</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Data Analysis</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../posts/data_analysis/data_imputation/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Handling Missing Data</span></a>
   </div>
 </li>
       </ul>
@@ -239,7 +256,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#want-to-learn-programming-and-become-an-expert" id="toc-want-to-learn-programming-and-become-an-expert" class="nav-link active" data-scroll-target="#want-to-learn-programming-and-become-an-expert">Want to learn programming and become an expert?</a></li>
+  <li><a href="#handling-missing-data" id="toc-handling-missing-data" class="nav-link active" data-scroll-target="#handling-missing-data">Handling Missing Data</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction:</a></li>
+  <li><a href="#simpleimputer-from-scikit-learn" id="toc-simpleimputer-from-scikit-learn" class="nav-link" data-scroll-target="#simpleimputer-from-scikit-learn">SimpleImputer from scikit-learn:</a></li>
+  <li><a href="#knnimputer-from-scikit-learn" id="toc-knnimputer-from-scikit-learn" class="nav-link" data-scroll-target="#knnimputer-from-scikit-learn">KNNImputer from scikit-learn:</a></li>
+  <li><a href="#iterativeimputer-from-scikit-learn" id="toc-iterativeimputer-from-scikit-learn" class="nav-link" data-scroll-target="#iterativeimputer-from-scikit-learn">IterativeImputer from scikit-learn:</a></li>
+  <li><a href="#datawig" id="toc-datawig" class="nav-link" data-scroll-target="#datawig">Datawig:</a></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/dataidea/dataidea-blog/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -250,96 +273,659 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="handling-missing-data" class="level2">
+<h2 class="anchored" data-anchor-id="handling-missing-data">Handling Missing Data</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="thumbnail.jpg" class="img-fluid figure-img"></p>
+<p><img src="imputation.webp" class="img-fluid figure-img"></p>
 <figcaption>Thumbnail</figcaption>
 </figure>
 </div>
-<p>What are the best puns? Definitely the ones only a specific group of people will understand and enjoy. Especially in the era we’re living in, we need to feel like a family and share “inside” jokes with one another. So, let’s take a look at some of the best programming puns we came upon during the pre-summer times.</p>
-<ol type="1">
-<li><strong>Why do programmers like dark mode?</strong>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction:</h2>
+<p>Missing data is a common hurdle in data analysis, impacting the reliability of insights drawn from datasets. Python offers a range of solutions to address this issue, some of which we discussed in the earlier weeks. In this notebook, we look into the top three missing data imputation methods in Python—SimpleImputer, KNNImputer, and IterativeImputer from scikit-learn—providing insights into their functionalities and practical considerations. We’ll explore these essential techniques, using the weather dataset.</p>
+<pre><code># install the libraries for this demonstration
+! pip install dataidea==0.2.5</code></pre>
+<pre><code>from dataidea.packages import * 
+from dataidea.datasets import loadDataset</code></pre>
+<p><code>from dataidea.packages import *</code> imports for us np, pd, plt, etc. <code>loadDataset</code> allows us to load datasets inbuilt in the dataidea library</p>
+<pre><code>weather = loadDataset('weather') </code></pre>
+<pre><code>weather</code></pre>
+<div>
+
+<table class="dataframe table table-sm table-striped small">
+<thead>
+<tr>
+<th>
+</th>
+<th>
+day
+</th>
+<th>
+temperature
+</th>
+<th>
+windspead
+</th>
+<th>
+event
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>
+0
+</th>
+<td>
+01/01/2017
+</td>
+<td>
+32.0
+</td>
+<td>
+6.0
+</td>
+<td>
+Rain
+</td>
+</tr>
+<tr>
+<th>
+1
+</th>
+<td>
+04/01/2017
+</td>
+<td>
+NaN
+</td>
+<td>
+9.0
+</td>
+<td>
+Sunny
+</td>
+</tr>
+<tr>
+<th>
+2
+</th>
+<td>
+05/01/2017
+</td>
+<td>
+28.0
+</td>
+<td>
+NaN
+</td>
+<td>
+Snow
+</td>
+</tr>
+<tr>
+<th>
+3
+</th>
+<td>
+06/01/2017
+</td>
+<td>
+NaN
+</td>
+<td>
+7.0
+</td>
+<td>
+NaN
+</td>
+</tr>
+<tr>
+<th>
+4
+</th>
+<td>
+07/01/2017
+</td>
+<td>
+32.0
+</td>
+<td>
+NaN
+</td>
+<td>
+Rain
+</td>
+</tr>
+<tr>
+<th>
+5
+</th>
+<td>
+08/01/2017
+</td>
+<td>
+NaN
+</td>
+<td>
+NaN
+</td>
+<td>
+Sunny
+</td>
+</tr>
+<tr>
+<th>
+6
+</th>
+<td>
+09/01/2017
+</td>
+<td>
+NaN
+</td>
+<td>
+NaN
+</td>
+<td>
+NaN
+</td>
+</tr>
+<tr>
+<th>
+7
+</th>
+<td>
+10/01/2017
+</td>
+<td>
+34.0
+</td>
+<td>
+8.0
+</td>
+<td>
+Cloudy
+</td>
+</tr>
+<tr>
+<th>
+8
+</th>
+<td>
+11/01/2017
+</td>
+<td>
+40.0
+</td>
+<td>
+12.0
+</td>
+<td>
+Sunny
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code>weather.isna().sum()</code></pre>
+<pre><code>day            0
+temperature    4
+windspead      4
+event          2
+dtype: int64</code></pre>
+<p>Let’s demonstrate how to use the top three missing data imputation methods—SimpleImputer, KNNImputer, and IterativeImputer—using the simple weather dataset.</p>
+<pre><code># select age from the data
+temp_wind = weather[['temperature', 'windspead']].copy()</code></pre>
+<pre><code>temp_wind_imputed = temp_wind.copy()</code></pre>
+</section>
+<section id="simpleimputer-from-scikit-learn" class="level2">
+<h2 class="anchored" data-anchor-id="simpleimputer-from-scikit-learn">SimpleImputer from scikit-learn:</h2>
 <ul>
-<li>Because light attracts bugs.</li>
-</ul></li>
-<li><strong>I used to work as a programmer for autocorrect…</strong>
+<li><strong>Usage</strong>: SimpleImputer is a straightforward method for imputing missing values by replacing them with a constant, mean, median, or most frequent value along each column.</li>
+<li><strong>Pros</strong>:
 <ul>
-<li>Then they fried me for no raisin.</li>
+<li>Easy to use and understand.</li>
+<li>Can handle both numerical and categorical data.</li>
+<li>Offers flexibility with different imputation strategies.</li>
 </ul></li>
-<li><strong>What do NASA programmers do on the weekends?</strong>
+<li><strong>Cons</strong>:
 <ul>
-<li>They hit the space bar.</li>
+<li>It doesn’t consider relationships between features.</li>
+<li>May not be the best choice for datasets with complex patterns of missingness.</li>
 </ul></li>
-<li><strong>Why did the programmer quit his job?</strong>
+<li><strong>Example</strong>:</li>
+</ul>
+<pre><code>from sklearn.impute import SimpleImputer
+
+simple_imputer = SimpleImputer(strategy='mean')
+temp_wind_simple_imputed = simple_imputer.fit_transform(temp_wind)
+
+temp_wind_simple_imputed_df = pd.DataFrame(temp_wind_simple_imputed, columns=temp_wind.columns)</code></pre>
+<p>Let’s have a look at the outcome</p>
+<pre><code>temp_wind_simple_imputed_df</code></pre>
+<div>
+
+<table class="dataframe table table-sm table-striped small">
+<thead>
+<tr>
+<th>
+</th>
+<th>
+temperature
+</th>
+<th>
+windspead
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>
+0
+</th>
+<td>
+32.0
+</td>
+<td>
+6.0
+</td>
+</tr>
+<tr>
+<th>
+1
+</th>
+<td>
+33.2
+</td>
+<td>
+9.0
+</td>
+</tr>
+<tr>
+<th>
+2
+</th>
+<td>
+28.0
+</td>
+<td>
+8.4
+</td>
+</tr>
+<tr>
+<th>
+3
+</th>
+<td>
+33.2
+</td>
+<td>
+7.0
+</td>
+</tr>
+<tr>
+<th>
+4
+</th>
+<td>
+32.0
+</td>
+<td>
+8.4
+</td>
+</tr>
+<tr>
+<th>
+5
+</th>
+<td>
+33.2
+</td>
+<td>
+8.4
+</td>
+</tr>
+<tr>
+<th>
+6
+</th>
+<td>
+33.2
+</td>
+<td>
+8.4
+</td>
+</tr>
+<tr>
+<th>
+7
+</th>
+<td>
+34.0
+</td>
+<td>
+8.0
+</td>
+</tr>
+<tr>
+<th>
+8
+</th>
+<td>
+40.0
+</td>
+<td>
+12.0
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="knnimputer-from-scikit-learn" class="level2">
+<h2 class="anchored" data-anchor-id="knnimputer-from-scikit-learn">KNNImputer from scikit-learn:</h2>
 <ul>
-<li>Because he didn’t get arrays.</li>
-</ul></li>
-<li><strong>What was the SNES programmers’ favorite drink?</strong>
+<li><strong>Usage</strong>: KNNImputer imputes missing values using k-nearest neighbors, replacing them with the mean value of the nearest neighbors.</li>
+<li><strong>Pros</strong>:
 <ul>
-<li>Sprite</li>
+<li>Considers relationships between features, making it suitable for datasets with complex patterns of missingness.</li>
+<li>Can handle both numerical and categorical data.</li>
 </ul></li>
-<li><strong>What do programmers do when they’re hungry?</strong>
+<li><strong>Cons</strong>:
 <ul>
-<li>They grab a byte.</li>
+<li>Computationally expensive for large datasets.</li>
+<li>Requires careful selection of the number of neighbors (k).</li>
 </ul></li>
-<li><strong>Why couldn’t the programmer dance to the song?</strong>
+<li><strong>Example</strong>:</li>
+</ul>
+<pre><code>from sklearn.impute import KNNImputer
+
+knn_imputer = KNNImputer(n_neighbors=2)
+temp_wind_knn_imputed = knn_imputer.fit_transform(temp_wind)
+
+temp_wind_knn_imputed_df = pd.DataFrame(temp_wind_knn_imputed, columns=temp_wind.columns)</code></pre>
+<p>If we take a look at the outcome</p>
+<pre><code>temp_wind_knn_imputed_df</code></pre>
+<div>
+
+<table class="dataframe table table-sm table-striped small">
+<thead>
+<tr>
+<th>
+</th>
+<th>
+temperature
+</th>
+<th>
+windspead
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>
+0
+</th>
+<td>
+32.0
+</td>
+<td>
+6.0
+</td>
+</tr>
+<tr>
+<th>
+1
+</th>
+<td>
+33.0
+</td>
+<td>
+9.0
+</td>
+</tr>
+<tr>
+<th>
+2
+</th>
+<td>
+28.0
+</td>
+<td>
+7.0
+</td>
+</tr>
+<tr>
+<th>
+3
+</th>
+<td>
+33.0
+</td>
+<td>
+7.0
+</td>
+</tr>
+<tr>
+<th>
+4
+</th>
+<td>
+32.0
+</td>
+<td>
+7.0
+</td>
+</tr>
+<tr>
+<th>
+5
+</th>
+<td>
+33.2
+</td>
+<td>
+8.4
+</td>
+</tr>
+<tr>
+<th>
+6
+</th>
+<td>
+33.2
+</td>
+<td>
+8.4
+</td>
+</tr>
+<tr>
+<th>
+7
+</th>
+<td>
+34.0
+</td>
+<td>
+8.0
+</td>
+</tr>
+<tr>
+<th>
+8
+</th>
+<td>
+40.0
+</td>
+<td>
+12.0
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="iterativeimputer-from-scikit-learn" class="level2">
+<h2 class="anchored" data-anchor-id="iterativeimputer-from-scikit-learn">IterativeImputer from scikit-learn:</h2>
 <ul>
-<li>Because he didn’t get the… algo-rhythm…</li>
-</ul></li>
-<li><strong>What you call it when computer programmers make fun of each other?</strong>
+<li><strong>Usage</strong>: IterativeImputer models each feature with missing values as a function of other features and uses that estimate for imputation. It iteratively estimates the missing values.</li>
+<li><strong>Pros</strong>:
 <ul>
-<li>Cyber boolean…</li>
+<li>Takes into account relationships between features, making it suitable for datasets with complex missing patterns.</li>
+<li>More robust than SimpleImputer for handling missing data.</li>
 </ul></li>
-<li><strong>I am now a successful programmer…</strong>
+<li><strong>Cons</strong>:
 <ul>
-<li>But back in the days I was a noobgrammer.</li>
+<li>Can be computationally intensive and slower than SimpleImputer.</li>
+<li>Requires careful tuning of model parameters.</li>
 </ul></li>
-<li><strong>Why do programmers always mix up Halloween and Christmas?</strong>
+<li><strong>Example</strong>:</li>
+</ul>
+<pre><code>from sklearn.experimental import enable_iterative_imputer
+from sklearn.impute import IterativeImputer
+
+iterative_imputer = IterativeImputer()
+temp_wind_iterative_imputed = iterative_imputer.fit_transform(temp_wind)
+
+temp_wind_iterative_imputed_df = pd.DataFrame(temp_wind_iterative_imputed, columns=temp_wind.columns)</code></pre>
+<p>Let’s take a look at the outcome</p>
+<pre><code>temp_wind_iterative_imputed_df</code></pre>
+<div>
+
+<table class="dataframe table table-sm table-striped small">
+<thead>
+<tr>
+<th>
+</th>
+<th>
+temperature
+</th>
+<th>
+windspead
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>
+0
+</th>
+<td>
+32.000000
+</td>
+<td>
+6.000000
+</td>
+</tr>
+<tr>
+<th>
+1
+</th>
+<td>
+35.773287
+</td>
+<td>
+9.000000
+</td>
+</tr>
+<tr>
+<th>
+2
+</th>
+<td>
+28.000000
+</td>
+<td>
+3.321648
+</td>
+</tr>
+<tr>
+<th>
+3
+</th>
+<td>
+33.042537
+</td>
+<td>
+7.000000
+</td>
+</tr>
+<tr>
+<th>
+4
+</th>
+<td>
+32.000000
+</td>
+<td>
+6.238915
+</td>
+</tr>
+<tr>
+<th>
+5
+</th>
+<td>
+33.545118
+</td>
+<td>
+7.365795
+</td>
+</tr>
+<tr>
+<th>
+6
+</th>
+<td>
+33.545118
+</td>
+<td>
+7.365795
+</td>
+</tr>
+<tr>
+<th>
+7
+</th>
+<td>
+34.000000
+</td>
+<td>
+8.000000
+</td>
+</tr>
+<tr>
+<th>
+8
+</th>
+<td>
+40.000000
+</td>
+<td>
+12.000000
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="datawig" class="level2">
+<h2 class="anchored" data-anchor-id="datawig">Datawig:</h2>
+<p>Datawig is a library specifically designed for imputing missing values in tabular data using deep learning models.</p>
+<pre><code># import datawig
+
+# # Impute missing values
+# df_imputed = datawig.SimpleImputer.complete(weather)</code></pre>
+<p>These top imputation methods offer different trade-offs in terms of computational complexity, handling of missing data patterns, and ease of use. The choice between them depends on the specific characteristics of the dataset and the requirements of the analysis.</p>
+</section>
+<section id="homework" class="level2">
+<h2 class="anchored" data-anchor-id="homework">Homework</h2>
 <ul>
-<li>Because Oct 31 equals Dec 25.</li>
-</ul></li>
-<li><strong>Why did the programmer get a huge telephone bill?</strong>
-<ul>
-<li>Because his program was CALLING a lot of subroutines.</li>
-</ul></li>
-<li><strong>What do Spanish programmers code in?</strong>
-<ul>
-<li>Sí ++</li>
-</ul></li>
-<li><strong>Which way did the programmer go?</strong>
-<ul>
-<li>He went data way!</li>
-</ul></li>
-<li><strong>Why was the programmer always running into walls?</strong>
-<ul>
-<li>He couldn’t see sharp.</li>
-</ul></li>
-<li><strong>How programmers curse?</strong>
-<ul>
-<li>Oh shift!</li>
-</ul></li>
-<li><strong>Why do programmers make good politicians?</strong>
-<ul>
-<li>Their goto is to switch statements.</li>
-</ul></li>
-<li><strong>How did the programmer lose weight?</strong>
-<ul>
-<li>He switched to a byte-sized diet.</li>
-</ul></li>
-<li><strong>I almost bought a huge library out of old computer programming books…</strong>
-<ul>
-<li>But the ascii price was way too high.</li>
-</ul></li>
-<li><strong>What’s a Jedi’s favorite programming language?</strong>
-<ul>
-<li>JabbaScript…</li>
-</ul></li>
-</ol>
-<section id="want-to-learn-programming-and-become-an-expert" class="level1">
-<h1>Want to learn programming and become an expert?</h1>
-<p>If you’re serious about learning Programming and getting a job as a Developer, I highly encourage you to enroll in my programming courses for Python, JavaScript, Data Science and Web Development.</p>
-<p>Don’t waste your time following disconnected, outdated tutorials. I can teach you all that you need to kickstart your career.</p>
-<p>Contact me at <a href="tel:+256771754118">+256771754118</a> or <a href="mailto:jumashafara@proton.me">jumashafara@proton.me</a></p>
+<li>Try out these techniques for categorical data</li>
+</ul>
 
 
 </section>
@@ -756,11 +1342,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../../posts/software/All Software Used in Mr. Robot/index.html" class="pagination-link" aria-label="All Software used in Mr. Robot">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">All Software used in Mr.&nbsp;Robot</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../posts/Software/Top 5 Operating Systems/index.html" class="pagination-link" aria-label="To 5 Operating Systems">
-        <span class="nav-page-text">To 5 Operating Systems</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

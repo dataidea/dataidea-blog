@@ -17,11 +17,14 @@ website:
     contents:
       - section: Fun Stuff
         contents:
-          - posts/Fun Stuff/Puns Only Programmers Will Get/index.qmd
+          - posts/fun_stuff/Puns Only Programmers Will Get/index.qmd
       - section: Software
         contents:
-          - posts/Software/Top 5 Operating Systems/index.qmd
-          - posts/Software/All Software Used in Mr. Robot/index.qmd
+          - posts/software/Top 5 Operating Systems/index.qmd
+          - posts/software/All Software Used in Mr. Robot/index.qmd
+      - section: Data Analysis
+        contents:
+          - "posts/data_analysis/data_imputation/index.qmd"
   navbar:
     logo: assets/dataidea-logo.png
     right:

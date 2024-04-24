@@ -2,9 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/Fun Stuff/Puns Only Programmers Will Get/index.html",
-      "/posts/Software/All Software Used in Mr. Robot/index.html",
-      "/posts/Software/Top 5 Operating Systems/index.html"
+      "/posts/data_analysis/data_imputation/index.html",
+      "/posts/fun_stuff/Puns Only Programmers Will Get/index.html",
+      "/posts/software/All Software Used in Mr. Robot/index.html",
+      "/posts/software/Top 5 Operating Systems/index.html"
     ]
   }
 ]
