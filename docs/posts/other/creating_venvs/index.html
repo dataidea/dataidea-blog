@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Juma Shafara">
+<meta name="dcterms.date" content="2024-04-25">
 
-<title>DATAIDEA - Welcome to the DATAIDEA blog</title>
+<title>DATAIDEA - Python Virtual Environments</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +22,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,67 +102,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed">
@@ -138,7 +114,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">DATAIDEA</span>
     </a>
   </div>
@@ -201,7 +177,7 @@ window.Quarto = {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Welcome to the DATAIDEA blog</h1>
+          <h1 class="quarto-secondary-nav-title">Python Virtual Environments</h1>
         </a>     
     </div>
   </nav>
@@ -210,20 +186,37 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Welcome to the DATAIDEA blog</h1>
-                      </div>
+      <h1 class="title d-none d-lg-block">Python Virtual Environments</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Data Analysis</div>
+                <div class="quarto-category">Software</div>
+                <div class="quarto-category">Other</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-body">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Juma Shafara </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 25, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
@@ -239,7 +232,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/fun_stuff/programmer_puns/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../posts/fun_stuff/programmer_puns/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Puns Only Programmers Will Get</span></a>
   </div>
 </li>
@@ -256,13 +249,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/software/top_5_operating_systems/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../posts/software/top_5_operating_systems/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">To 5 Operating Systems</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/software/mr_robot_softwares/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../posts/software/mr_robot_softwares/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">All Software used in Mr.&nbsp;Robot</span></a>
   </div>
 </li>
@@ -279,7 +272,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/data_analysis/data_imputation/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../posts/data_analysis/data_imputation/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Handling Missing Data</span></a>
   </div>
 </li>
@@ -291,197 +284,88 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Data Analysis">Data Analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Fun Stuff">Fun Stuff <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Other">Other <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Software">Software <span class="quarto-category-count">(3)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-a-python-virtual-environment" id="toc-what-is-a-python-virtual-environment" class="nav-link active" data-scroll-target="#what-is-a-python-virtual-environment">What is a Python Virtual Environment?</a></li>
+  <li><a href="#step-1-setting-up-a-virtual-environment" id="toc-step-1-setting-up-a-virtual-environment" class="nav-link" data-scroll-target="#step-1-setting-up-a-virtual-environment">Step 1: Setting Up a Virtual Environment</a></li>
+  <li><a href="#step-2-activating-the-virtual-environment" id="toc-step-2-activating-the-virtual-environment" class="nav-link" data-scroll-target="#step-2-activating-the-virtual-environment">Step 2: Activating the Virtual Environment</a></li>
+  <li><a href="#step-3-installing-packages" id="toc-step-3-installing-packages" class="nav-link" data-scroll-target="#step-3-installing-packages">Step 3: Installing Packages</a></li>
+  <li><a href="#step-4-using-dataidea-in-your-project" id="toc-step-4-using-dataidea-in-your-project" class="nav-link" data-scroll-target="#step-4-using-dataidea-in-your-project">Step 4: Using <code>dataidea</code> in Your Project</a></li>
+  <li><a href="#step-5-deactivating-the-virtual-environment" id="toc-step-5-deactivating-the-virtual-environment" class="nav-link" data-scroll-target="#step-5-deactivating-the-virtual-environment">Step 5: Deactivating the Virtual Environment</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/dataidea/dataidea-blog/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="thumbnail.png" class="img-fluid figure-img"></p>
+<figcaption>Photo by DATAIDEA</figcaption>
+</figure>
+</div>
+<p>In the vast ecosystem of Python programming, managing dependencies can sometimes be a daunting task. As projects grow in complexity, so does the need for a clean and isolated environment where dependencies can be installed without affecting other projects or the system-wide Python installation. This is where Python virtual environments come into play. In this guide, we’ll walk through the process of creating a virtual environment using venv and installing a package, like DataIdea, within it.</p>
+<section id="what-is-a-python-virtual-environment" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-python-virtual-environment">What is a Python Virtual Environment?</h3>
+<p>A virtual environment is a self-contained directory tree that contains a Python installation for a particular version of Python, plus a number of additional packages. It allows you to work on a Python project in isolation, ensuring that your project’s dependencies are maintained separately from other projects or the system Python.</p>
+</section>
+<section id="step-1-setting-up-a-virtual-environment" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-setting-up-a-virtual-environment">Step 1: Setting Up a Virtual Environment</h3>
+<p>Python 3 comes with a built-in module called <code>venv</code>, which is used to create virtual environments. To create a virtual environment, open your terminal or command prompt and navigate to the directory where you want to create the environment. Then, run the following command:</p>
+<ul>
+<li><strong>On macOS and Linux:</strong></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-m</span> venv myenv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><strong>On Windows:</strong></li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> venv myenv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Replace <code>myenv</code> with the name you want to give to your virtual environment. This command will create a directory named <code>myenv</code> (or whatever name you provided) containing a Python interpreter and other necessary files.</p>
+</section>
+<section id="step-2-activating-the-virtual-environment" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-activating-the-virtual-environment">Step 2: Activating the Virtual Environment</h3>
+<p>Once the virtual environment is created, you need to activate it. Activation sets up the environment variables and modifies your shell prompt to indicate that you are now working within the virtual environment. Activate the virtual environment by running the appropriate command for your operating system:</p>
+<ul>
+<li><strong>On macOS and Linux:</strong></li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> myenv/bin/activate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><strong>On Windows:</strong></li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">myenv\Scripts\activate</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You’ll notice that your command prompt changes to show the name of the activated virtual environment.</p>
+</section>
+<section id="step-3-installing-packages" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-installing-packages">Step 3: Installing Packages</h3>
+<p>With the virtual environment activated, you can now install packages without affecting the global Python installation. Let’s install <code>dataidea</code>, as an example:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install dataidea</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>you can replace <code>dataidea</code> with another name of the package you want to install.</p>
+</section>
+<section id="step-4-using-dataidea-in-your-project" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-using-dataidea-in-your-project">Step 4: Using <code>dataidea</code> in Your Project</h3>
+<p>Once the package is installed, you can start using it in your Python project. Simply import it in your Python scripts as you would with any other package:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> dataidea</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="step-5-deactivating-the-virtual-environment" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-deactivating-the-virtual-environment">Step 5: Deactivating the Virtual Environment</h3>
+<p>When you’re done working on your project and want to leave the virtual environment, you can deactivate it by simply typing:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">deactivate</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>Python virtual environments are indispensable tools for managing dependencies and keeping project environments clean and isolated. With the <code>venv</code> module, creating and managing virtual environments has become easier than ever. By following the steps outlined in this guide, you can create a virtual environment, install packages like DataIdea, and develop Python projects with confidence. Happy coding!</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Data Analysis,Software,Other" data-listing-date-sort="1713992400000" data-listing-file-modified-sort="1714076649133" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="453">
-<div class="thumbnail">
-<p><a href="./posts/other/creating_venvs/index.html" class="no-external"></a></p><a href="./posts/other/creating_venvs/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/other/creating_venvs/thumbnail.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/other/creating_venvs/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/other/creating_venvs/index.html" class="no-external">Python Virtual Environments</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/other/creating_venvs/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Data Analysis'); return false;">
-Data Analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Software'); return false;">
-Software
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Other'); return false;">
-Other
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/other/creating_venvs/index.html" class="no-external">In the vast ecosystem of Python programming, managing dependencies can sometimes be a daunting task. As projects grow in complexity, so does the need for a clean and…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/other/creating_venvs/index.html" class="no-external">
-<div class="listing-date">
-Apr 25, 2024
-</div>
-<div class="listing-author">
-Juma Shafara
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Data Analysis" data-listing-date-sort="1713906000000" data-listing-file-modified-sort="1713987254995" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2205">
-<div class="thumbnail">
-<p><a href="./posts/data_analysis/data_imputation/index.html" class="no-external"></a></p><a href="./posts/data_analysis/data_imputation/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/data_analysis/data_imputation/handling_missing_data.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/data_analysis/data_imputation/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/data_analysis/data_imputation/index.html" class="no-external">Handling Missing Data</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/data_analysis/data_imputation/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Data Analysis'); return false;">
-Data Analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/data_analysis/data_imputation/index.html" class="no-external">Missing data is a common hurdle in data analysis, impacting the reliability of insights drawn from datasets. Python offers a range of solutions to address this issue, some…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/data_analysis/data_imputation/index.html" class="no-external">
-<div class="listing-date">
-Apr 24, 2024
-</div>
-<div class="listing-author">
-Juma Shafara
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Fun Stuff" data-listing-date-sort="1713560400000" data-listing-file-modified-sort="1713987594870" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="427">
-<div class="thumbnail">
-<p><a href="./posts/fun_stuff/programmer_puns/index.html" class="no-external"></a></p><a href="./posts/fun_stuff/programmer_puns/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/fun_stuff/programmer_puns/shrimply_the_best.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/fun_stuff/programmer_puns/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/fun_stuff/programmer_puns/index.html" class="no-external">Puns Only Programmers Will Get</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/fun_stuff/programmer_puns/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Fun Stuff'); return false;">
-Fun Stuff
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/fun_stuff/programmer_puns/index.html" class="no-external">What are the best puns? Definitely the ones only a specific group of people will understand and enjoy. Especially in the era we’re living in, we need to feel like a family…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/fun_stuff/programmer_puns/index.html" class="no-external">
-<div class="listing-date">
-Apr 20, 2024
-</div>
-<div class="listing-author">
-Juma Shafara
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Software" data-listing-date-sort="1708376400000" data-listing-file-modified-sort="1713988241975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="987">
-<div class="thumbnail">
-<p><a href="./posts/software/mr_robot_softwares/index.html" class="no-external"></a></p><a href="./posts/software/mr_robot_softwares/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/software/mr_robot_softwares/mr_robot.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/software/mr_robot_softwares/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/software/mr_robot_softwares/index.html" class="no-external">All Software used in Mr.&nbsp;Robot</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/software/mr_robot_softwares/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Software'); return false;">
-Software
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/software/mr_robot_softwares/index.html" class="no-external">Here’s a list of the most popular softwares used by the hackers in the Emmy and Golden Globe award winning drama/thriller series Mr.&nbsp;Robot.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/software/mr_robot_softwares/index.html" class="no-external">
-<div class="listing-date">
-Feb 20, 2024
-</div>
-<div class="listing-author">
-Juma Shafara
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Software" data-listing-date-sort="1704834000000" data-listing-file-modified-sort="1713988031979" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="763">
-<div class="thumbnail">
-<p><a href="./posts/software/top_5_operating_systems/index.html" class="no-external"></a></p><a href="./posts/software/top_5_operating_systems/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/software/top_5_operating_systems/operating_systems.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/software/top_5_operating_systems/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/software/top_5_operating_systems/index.html" class="no-external">To 5 Operating Systems</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/software/top_5_operating_systems/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Software'); return false;">
-Software
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/software/top_5_operating_systems/index.html" class="no-external">Operating systems are the backbone of modern computing, providing the fundamental software foundation for computers, smartphones, servers, and more. Here’s a comprehensive…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/software/top_5_operating_systems/index.html" class="no-external">
-<div class="listing-date">
-Jan 10, 2024
-</div>
-<div class="listing-author">
-Juma Shafara
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -896,4 +780,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/dataidea/dataidea-blog/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/dataidea/dataidea-blog/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

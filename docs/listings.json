@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/other/creating_venvs/index.html",
       "/posts/data_analysis/data_imputation/index.html",
       "/posts/fun_stuff/programmer_puns/index.html",
       "/posts/software/mr_robot_softwares/index.html",
