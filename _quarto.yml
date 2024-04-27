@@ -18,6 +18,8 @@ website:
       - section: Fun Stuff
         contents:
           - posts/fun_stuff/programmer_puns/index.qmd
+          - posts/fun_stuff/fpl_standings/index.md
+          
       - section: Software
         contents:
           - posts/software/top_5_operating_systems/index.qmd
@@ -25,6 +27,9 @@ website:
       - section: Data Analysis
         contents:
           - "posts/data_analysis/data_imputation/index.qmd"
+      - section: Other
+        contents:
+          - posts/other/creating_venv/index.qmd
   navbar:
     right:
       - text: Home
@@ -41,6 +46,8 @@ website:
            url: 'https://chat.whatsapp.com/GuCZRyJICgO3Y7MPvDQKhi'
       - text: Contact
         href: 'https://courses.dataidea.org/contact'
+      - text: FPL
+        href: fpl.md
       - icon: twitter
         href: https://twitter.com/datas_idea
 format:

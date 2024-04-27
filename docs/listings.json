@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/fun_stuff/fpl_standings/index.html",
       "/posts/other/creating_venvs/index.html",
       "/posts/data_analysis/data_imputation/index.html",
       "/posts/fun_stuff/programmer_puns/index.html",

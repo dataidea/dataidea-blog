@@ -1,209 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to the DATAIDEA blog",
+    "objectID": "fpl.html",
+    "href": "fpl.html",
+    "title": "Welcome to the DATAIDEA Fantasy Premier League",
     "section": "",
-    "text": "Python Virtual Environments\n\n\n\n\n\n\nData Analysis\n\n\nSoftware\n\n\nOther\n\n\n\n\n\n\n\n\n\nApr 25, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\n\n\n\n\n\n\nHandling Missing Data\n\n\n\n\n\n\nData Analysis\n\n\n\n\n\n\n\n\n\nApr 24, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\n\n\n\n\n\n\nPuns Only Programmers Will Get\n\n\n\n\n\n\nFun Stuff\n\n\n\n\n\n\n\n\n\nApr 20, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\n\n\n\n\n\n\nAll Software used in Mr. Robot\n\n\n\n\n\n\nSoftware\n\n\n\n\n\n\n\n\n\nFeb 20, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\n\n\n\n\n\n\nTo 5 Operating Systems\n\n\n\n\n\n\nSoftware\n\n\n\n\n\n\n\n\n\nJan 10, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Current Standings\n\n\n\nRank\nTeams & Manager\nGW\nTOT\n\n\n\n\n1\nBARCA ya KAHUNGYE\n121\n2042\n\n\n2\nAlBramo FC\n59\n1992\n\n\n3\nLethal Weapon\n98\n1956\n\n\n4\nBrine FC\n121\n1946\n\n\n5\nJumaShafara@DATAIDEA\n39\n1908\n\n\n6\nRwenzori\n111\n1890\n\n\n7\nJ T\n83\n1888\n\n\n8\nGULU UNITED F.C\n101\n1870\n\n\n9\nAJ12\n69\n1854\n\n\n10\nGem Fc\n76\n1852\n\n\n11\nLegends FC\n76\n1795\n\n\n12\nM142 HIMARS\n92\n1748\n\n\n13\nColaz guluz\n59\n1739\n\n\n14\nPaperChaser Of Uganda\n116\n1698\n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "posts/software/top_5_operating_systems/index.html",
-    "href": "posts/software/top_5_operating_systems/index.html",
-    "title": "To 5 Operating Systems",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Thumbnail\nOperating systems are the backbone of modern computing, providing the fundamental software foundation for computers, smartphones, servers, and more. Here’s a comprehensive overview of five prominent operating systems that have made significant impacts in various domains.",
-    "crumbs": [
-      "Home",
-      "Software",
-      "To 5 Operating Systems"
-    ]
-  },
-  {
-    "objectID": "posts/software/top_5_operating_systems/index.html#windows",
-    "href": "posts/software/top_5_operating_systems/index.html#windows",
-    "title": "To 5 Operating Systems",
-    "section": "Windows",
-    "text": "Windows\n\nOverview\nDeveloped by Microsoft, Windows is one of the most widely used operating systems across PCs, servers, and embedded systems. Known for its user-friendly interface and extensive software compatibility, Windows offers a variety of versions tailored for different devices and use cases.\n\n\nFeatures\n\nGUI: Graphical User Interface for intuitive navigation.\nCompatibility: Broad support for software and hardware.\nSecurity: Regular updates and security features.",
-    "crumbs": [
-      "Home",
-      "Software",
-      "To 5 Operating Systems"
-    ]
-  },
-  {
-    "objectID": "posts/software/top_5_operating_systems/index.html#macos",
-    "href": "posts/software/top_5_operating_systems/index.html#macos",
-    "title": "To 5 Operating Systems",
-    "section": "macOS",
-    "text": "macOS\n\nOverview\nExclusive to Apple’s hardware, macOS offers a sleek and intuitive user experience. It is known for its stability, design aesthetics, and seamless integration with other Apple devices and services.\n\n\nFeatures\n\nIntegration: Seamless integration with other Apple devices.\nPerformance: Optimized for Mac hardware.\nSecurity: Built-in encryption and privacy features.",
-    "crumbs": [
-      "Home",
-      "Software",
-      "To 5 Operating Systems"
-    ]
-  },
-  {
-    "objectID": "posts/software/top_5_operating_systems/index.html#linux",
-    "href": "posts/software/top_5_operating_systems/index.html#linux",
-    "title": "To 5 Operating Systems",
-    "section": "Linux",
-    "text": "Linux\n\nOverview\nLinux is an open-source operating system available in various distributions (distros), catering to diverse user needs. Its flexibility, stability, and robustness have made it a favorite among developers, server administrators, and tech enthusiasts.\n\n\nFeatures\n\nOpen Source: Community-driven development and customization.\nVariety: Diverse distributions catering to different needs.\nStability: Known for reliability and performance.",
-    "crumbs": [
-      "Home",
-      "Software",
-      "To 5 Operating Systems"
-    ]
-  },
-  {
-    "objectID": "posts/software/top_5_operating_systems/index.html#android",
-    "href": "posts/software/top_5_operating_systems/index.html#android",
-    "title": "To 5 Operating Systems",
-    "section": "Android",
-    "text": "Android\n\nOverview\nDeveloped by Google, Android is the leading operating system for mobile devices globally. Its open-source nature, customizable interface, and extensive app ecosystem have made it a dominant force in the mobile market.\n\n\nFeatures\n\nCustomization: Ability to personalize interface and features.\nApp Ecosystem: Extensive library of applications.\nIntegration: Seamless integration with Google services.",
-    "crumbs": [
-      "Home",
-      "Software",
-      "To 5 Operating Systems"
-    ]
-  },
-  {
-    "objectID": "posts/software/top_5_operating_systems/index.html#iosipados",
-    "href": "posts/software/top_5_operating_systems/index.html#iosipados",
-    "title": "To 5 Operating Systems",
-    "section": "iOS/iPadOS",
-    "text": "iOS/iPadOS\n\nOverview\nExclusive to Apple’s mobile devices, iOS and iPadOS are renowned for their smooth performance, security features, and seamless integration within the Apple ecosystem.\n\n\nFeatures\n\nPerformance: Smooth and efficient operation on Apple devices.\nSecurity: Robust security measures and privacy controls.\nEcosystem Integration: Seamless integration with other Apple devices.\n\nIn conclusion, these operating systems showcase diversity in terms of architecture, platform support, and features, catering to the varied needs of users across different devices and industries.",
-    "crumbs": [
-      "Home",
-      "Software",
-      "To 5 Operating Systems"
-    ]
-  },
-  {
-    "objectID": "posts/fun_stuff/programmer_puns/index.html",
-    "href": "posts/fun_stuff/programmer_puns/index.html",
-    "title": "Puns Only Programmers Will Get",
-    "section": "",
-    "text": "Photo by DATAIDEA\n\n\nWhat are the best puns? Definitely the ones only a specific group of people will understand and enjoy. Especially in the era we’re living in, we need to feel like a family and share “inside” jokes with one another. So, let’s take a look at some of the best programming puns we came upon during the pre-summer times.\n\nWhy do programmers like dark mode?\n\nBecause light attracts bugs.\n\nI used to work as a programmer for autocorrect…\n\nThen they fried me for no raisin.\n\nWhat do NASA programmers do on the weekends?\n\nThey hit the space bar.\n\nWhy did the programmer quit his job?\n\nBecause he didn’t get arrays.\n\nWhat was the SNES programmers’ favorite drink?\n\nSprite\n\nWhat do programmers do when they’re hungry?\n\nThey grab a byte.\n\nWhy couldn’t the programmer dance to the song?\n\nBecause he didn’t get the… algo-rhythm…\n\nWhat you call it when computer programmers make fun of each other?\n\nCyber boolean…\n\nI am now a successful programmer…\n\nBut back in the days I was a noobgrammer.\n\nWhy do programmers always mix up Halloween and Christmas?\n\nBecause Oct 31 equals Dec 25.\n\nWhy did the programmer get a huge telephone bill?\n\nBecause his program was CALLING a lot of subroutines.\n\nWhat do Spanish programmers code in?\n\nSí ++\n\nWhich way did the programmer go?\n\nHe went data way!\n\nWhy was the programmer always running into walls?\n\nHe couldn’t see sharp.\n\nHow programmers curse?\n\nOh shift!\n\nWhy do programmers make good politicians?\n\nTheir goto is to switch statements.\n\nHow did the programmer lose weight?\n\nHe switched to a byte-sized diet.\n\nI almost bought a huge library out of old computer programming books…\n\nBut the ascii price was way too high.\n\nWhat’s a Jedi’s favorite programming language?\n\nJabbaScript…\n\n\n\nWant to learn programming and become an expert?\nIf you’re serious about learning Programming and getting a job as a Developer, I highly encourage you to enroll in my programming courses for Python, JavaScript, Data Science and Web Development.\nDon’t waste your time following disconnected, outdated tutorials. I can teach you all that you need to kickstart your career.\nContact me at +256771754118 or jumashafara@proton.me\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Home",
-      "Fun Stuff",
-      "Puns Only Programmers Will Get"
-    ]
-  },
-  {
-    "objectID": "posts/data_analysis/data_imputation/index.html",
-    "href": "posts/data_analysis/data_imputation/index.html",
-    "title": "Handling Missing Data",
-    "section": "",
-    "text": "Photo by DATAIDEA",
-    "crumbs": [
-      "Home",
-      "Data Analysis",
-      "Handling Missing Data"
-    ]
-  },
-  {
-    "objectID": "posts/data_analysis/data_imputation/index.html#handling-missing-data",
-    "href": "posts/data_analysis/data_imputation/index.html#handling-missing-data",
-    "title": "Handling Missing Data",
-    "section": "",
-    "text": "Photo by DATAIDEA",
-    "crumbs": [
-      "Home",
-      "Data Analysis",
-      "Handling Missing Data"
-    ]
-  },
-  {
-    "objectID": "posts/data_analysis/data_imputation/index.html#introduction",
-    "href": "posts/data_analysis/data_imputation/index.html#introduction",
-    "title": "Handling Missing Data",
-    "section": "Introduction:",
-    "text": "Introduction:\nMissing data is a common hurdle in data analysis, impacting the reliability of insights drawn from datasets. Python offers a range of solutions to address this issue, some of which we discussed in the earlier weeks. In this notebook, we look into the top three missing data imputation methods in Python—SimpleImputer, KNNImputer, and IterativeImputer from scikit-learn—providing insights into their functionalities and practical considerations. We’ll explore these essential techniques, using the weather dataset.\n# install the libraries for this demonstration\n! pip install dataidea==0.2.5\nfrom dataidea.packages import * \nfrom dataidea.datasets import loadDataset\nfrom dataidea.packages import * imports for us np, pd, plt, etc. loadDataset allows us to load datasets inbuilt in the dataidea library\nweather = loadDataset('weather') \nweather\n\n\n\n\n\n\n\n\nday\n\n\ntemperature\n\n\nwindspead\n\n\nevent\n\n\n\n\n\n\n0\n\n\n01/01/2017\n\n\n32.0\n\n\n6.0\n\n\nRain\n\n\n\n\n1\n\n\n04/01/2017\n\n\nNaN\n\n\n9.0\n\n\nSunny\n\n\n\n\n2\n\n\n05/01/2017\n\n\n28.0\n\n\nNaN\n\n\nSnow\n\n\n\n\n3\n\n\n06/01/2017\n\n\nNaN\n\n\n7.0\n\n\nNaN\n\n\n\n\n4\n\n\n07/01/2017\n\n\n32.0\n\n\nNaN\n\n\nRain\n\n\n\n\n5\n\n\n08/01/2017\n\n\nNaN\n\n\nNaN\n\n\nSunny\n\n\n\n\n6\n\n\n09/01/2017\n\n\nNaN\n\n\nNaN\n\n\nNaN\n\n\n\n\n7\n\n\n10/01/2017\n\n\n34.0\n\n\n8.0\n\n\nCloudy\n\n\n\n\n8\n\n\n11/01/2017\n\n\n40.0\n\n\n12.0\n\n\nSunny\n\n\n\n\n\nweather.isna().sum()\nday            0\ntemperature    4\nwindspead      4\nevent          2\ndtype: int64\nLet’s demonstrate how to use the top three missing data imputation methods—SimpleImputer, KNNImputer, and IterativeImputer—using the simple weather dataset.\n# select age from the data\ntemp_wind = weather[['temperature', 'windspead']].copy()\ntemp_wind_imputed = temp_wind.copy()",
-    "crumbs": [
-      "Home",
-      "Data Analysis",
-      "Handling Missing Data"
-    ]
-  },
-  {
-    "objectID": "posts/data_analysis/data_imputation/index.html#simpleimputer-from-scikit-learn",
-    "href": "posts/data_analysis/data_imputation/index.html#simpleimputer-from-scikit-learn",
-    "title": "Handling Missing Data",
-    "section": "SimpleImputer from scikit-learn:",
-    "text": "SimpleImputer from scikit-learn:\n\nUsage: SimpleImputer is a straightforward method for imputing missing values by replacing them with a constant, mean, median, or most frequent value along each column.\nPros:\n\nEasy to use and understand.\nCan handle both numerical and categorical data.\nOffers flexibility with different imputation strategies.\n\nCons:\n\nIt doesn’t consider relationships between features.\nMay not be the best choice for datasets with complex patterns of missingness.\n\nExample:\n\nfrom sklearn.impute import SimpleImputer\n\nsimple_imputer = SimpleImputer(strategy='mean')\ntemp_wind_simple_imputed = simple_imputer.fit_transform(temp_wind)\n\ntemp_wind_simple_imputed_df = pd.DataFrame(temp_wind_simple_imputed, columns=temp_wind.columns)\nLet’s have a look at the outcome\ntemp_wind_simple_imputed_df\n\n\n\n\n\n\n\n\ntemperature\n\n\nwindspead\n\n\n\n\n\n\n0\n\n\n32.0\n\n\n6.0\n\n\n\n\n1\n\n\n33.2\n\n\n9.0\n\n\n\n\n2\n\n\n28.0\n\n\n8.4\n\n\n\n\n3\n\n\n33.2\n\n\n7.0\n\n\n\n\n4\n\n\n32.0\n\n\n8.4\n\n\n\n\n5\n\n\n33.2\n\n\n8.4\n\n\n\n\n6\n\n\n33.2\n\n\n8.4\n\n\n\n\n7\n\n\n34.0\n\n\n8.0\n\n\n\n\n8\n\n\n40.0\n\n\n12.0",
-    "crumbs": [
-      "Home",
-      "Data Analysis",
-      "Handling Missing Data"
-    ]
-  },
-  {
-    "objectID": "posts/data_analysis/data_imputation/index.html#knnimputer-from-scikit-learn",
-    "href": "posts/data_analysis/data_imputation/index.html#knnimputer-from-scikit-learn",
-    "title": "Handling Missing Data",
-    "section": "KNNImputer from scikit-learn:",
-    "text": "KNNImputer from scikit-learn:\n\nUsage: KNNImputer imputes missing values using k-nearest neighbors, replacing them with the mean value of the nearest neighbors.\nPros:\n\nConsiders relationships between features, making it suitable for datasets with complex patterns of missingness.\nCan handle both numerical and categorical data.\n\nCons:\n\nComputationally expensive for large datasets.\nRequires careful selection of the number of neighbors (k).\n\nExample:\n\nfrom sklearn.impute import KNNImputer\n\nknn_imputer = KNNImputer(n_neighbors=2)\ntemp_wind_knn_imputed = knn_imputer.fit_transform(temp_wind)\n\ntemp_wind_knn_imputed_df = pd.DataFrame(temp_wind_knn_imputed, columns=temp_wind.columns)\nIf we take a look at the outcome\ntemp_wind_knn_imputed_df\n\n\n\n\n\n\n\n\ntemperature\n\n\nwindspead\n\n\n\n\n\n\n0\n\n\n32.0\n\n\n6.0\n\n\n\n\n1\n\n\n33.0\n\n\n9.0\n\n\n\n\n2\n\n\n28.0\n\n\n7.0\n\n\n\n\n3\n\n\n33.0\n\n\n7.0\n\n\n\n\n4\n\n\n32.0\n\n\n7.0\n\n\n\n\n5\n\n\n33.2\n\n\n8.4\n\n\n\n\n6\n\n\n33.2\n\n\n8.4\n\n\n\n\n7\n\n\n34.0\n\n\n8.0\n\n\n\n\n8\n\n\n40.0\n\n\n12.0",
-    "crumbs": [
-      "Home",
-      "Data Analysis",
-      "Handling Missing Data"
-    ]
-  },
-  {
-    "objectID": "posts/data_analysis/data_imputation/index.html#iterativeimputer-from-scikit-learn",
-    "href": "posts/data_analysis/data_imputation/index.html#iterativeimputer-from-scikit-learn",
-    "title": "Handling Missing Data",
-    "section": "IterativeImputer from scikit-learn:",
-    "text": "IterativeImputer from scikit-learn:\n\nUsage: IterativeImputer models each feature with missing values as a function of other features and uses that estimate for imputation. It iteratively estimates the missing values.\nPros:\n\nTakes into account relationships between features, making it suitable for datasets with complex missing patterns.\nMore robust than SimpleImputer for handling missing data.\n\nCons:\n\nCan be computationally intensive and slower than SimpleImputer.\nRequires careful tuning of model parameters.\n\nExample:\n\nfrom sklearn.experimental import enable_iterative_imputer\nfrom sklearn.impute import IterativeImputer\n\niterative_imputer = IterativeImputer()\ntemp_wind_iterative_imputed = iterative_imputer.fit_transform(temp_wind)\n\ntemp_wind_iterative_imputed_df = pd.DataFrame(temp_wind_iterative_imputed, columns=temp_wind.columns)\nLet’s take a look at the outcome\ntemp_wind_iterative_imputed_df\n\n\n\n\n\n\n\n\ntemperature\n\n\nwindspead\n\n\n\n\n\n\n0\n\n\n32.000000\n\n\n6.000000\n\n\n\n\n1\n\n\n35.773287\n\n\n9.000000\n\n\n\n\n2\n\n\n28.000000\n\n\n3.321648\n\n\n\n\n3\n\n\n33.042537\n\n\n7.000000\n\n\n\n\n4\n\n\n32.000000\n\n\n6.238915\n\n\n\n\n5\n\n\n33.545118\n\n\n7.365795\n\n\n\n\n6\n\n\n33.545118\n\n\n7.365795\n\n\n\n\n7\n\n\n34.000000\n\n\n8.000000\n\n\n\n\n8\n\n\n40.000000\n\n\n12.000000",
-    "crumbs": [
-      "Home",
-      "Data Analysis",
-      "Handling Missing Data"
-    ]
-  },
-  {
-    "objectID": "posts/data_analysis/data_imputation/index.html#datawig",
-    "href": "posts/data_analysis/data_imputation/index.html#datawig",
-    "title": "Handling Missing Data",
-    "section": "Datawig:",
-    "text": "Datawig:\nDatawig is a library specifically designed for imputing missing values in tabular data using deep learning models.\n# import datawig\n\n# # Impute missing values\n# df_imputed = datawig.SimpleImputer.complete(weather)\nThese top imputation methods offer different trade-offs in terms of computational complexity, handling of missing data patterns, and ease of use. The choice between them depends on the specific characteristics of the dataset and the requirements of the analysis.",
-    "crumbs": [
-      "Home",
-      "Data Analysis",
-      "Handling Missing Data"
-    ]
-  },
-  {
-    "objectID": "posts/data_analysis/data_imputation/index.html#homework",
-    "href": "posts/data_analysis/data_imputation/index.html#homework",
-    "title": "Handling Missing Data",
-    "section": "Homework",
-    "text": "Homework\n\nTry out these techniques for categorical data",
-    "crumbs": [
-      "Home",
-      "Data Analysis",
-      "Handling Missing Data"
-    ]
-  },
-  {
-    "objectID": "posts/data_analysis/data_imputation/index.html#credit",
-    "href": "posts/data_analysis/data_imputation/index.html#credit",
-    "title": "Handling Missing Data",
-    "section": "Credit",
-    "text": "Credit\n\nDo you seriously want to learn Programming and Data Analysis with Python?\nIf you’re serious about learning Programming, Data Analysis with Python and getting prepared for Data Science roles, I highly encourage you to enroll in my Programming for Data Science Course, which I’ve taught to hundreds of students. Don’t waste your time following disconnected, outdated tutorials\nMy Complete Programming for Data Science Course has everything you need in one place.\nThe course offers:\n\nDuration: Usually 3-4 months\nSessions: Four times a week (one on one)\nLocation: Online or/and at UMF House, Sir Apollo Kagwa Road\n\nWhat you’l learn:\n\nFundamentals of programming\nData manipulation and analysis\nVisualization techniques\nIntroduction to machine learning\nDatabase Management with SQL (optional)\nWeb Development with Django (optional)\n\nBest\nJuma Shafara\nData Scientist, Instructor\njumashafara0@gmail.com / dataideaorg@gmail.com\n+256701520768 / +256771754118",
-    "crumbs": [
-      "Home",
-      "Data Analysis",
-      "Handling Missing Data"
-    ]
-  },
-  {
-    "objectID": "posts/other/creating_venvs/index.html",
-    "href": "posts/other/creating_venvs/index.html",
-    "title": "Python Virtual Environments",
-    "section": "",
-    "text": "Photo by DATAIDEA\n\n\nIn the vast ecosystem of Python programming, managing dependencies can sometimes be a daunting task. As projects grow in complexity, so does the need for a clean and isolated environment where dependencies can be installed without affecting other projects or the system-wide Python installation. This is where Python virtual environments come into play. In this guide, we’ll walk through the process of creating a virtual environment using venv and installing a package, like DataIdea, within it.\n\nWhat is a Python Virtual Environment?\nA virtual environment is a self-contained directory tree that contains a Python installation for a particular version of Python, plus a number of additional packages. It allows you to work on a Python project in isolation, ensuring that your project’s dependencies are maintained separately from other projects or the system Python.\n\n\nStep 1: Setting Up a Virtual Environment\nPython 3 comes with a built-in module called venv, which is used to create virtual environments. To create a virtual environment, open your terminal or command prompt and navigate to the directory where you want to create the environment. Then, run the following command:\n\nOn macOS and Linux:\n\npython3 -m venv myenv\n\nOn Windows:\n\npython -m venv myenv\nReplace myenv with the name you want to give to your virtual environment. This command will create a directory named myenv (or whatever name you provided) containing a Python interpreter and other necessary files.\n\n\nStep 2: Activating the Virtual Environment\nOnce the virtual environment is created, you need to activate it. Activation sets up the environment variables and modifies your shell prompt to indicate that you are now working within the virtual environment. Activate the virtual environment by running the appropriate command for your operating system:\n\nOn macOS and Linux:\n\nsource myenv/bin/activate\n\nOn Windows:\n\nmyenv\\Scripts\\activate\nYou’ll notice that your command prompt changes to show the name of the activated virtual environment.\n\n\nStep 3: Installing Packages\nWith the virtual environment activated, you can now install packages without affecting the global Python installation. Let’s install dataidea, as an example:\npip install dataidea\nyou can replace dataidea with another name of the package you want to install.\n\n\nStep 4: Using dataidea in Your Project\nOnce the package is installed, you can start using it in your Python project. Simply import it in your Python scripts as you would with any other package:\nimport dataidea\n\n\nStep 5: Deactivating the Virtual Environment\nWhen you’re done working on your project and want to leave the virtual environment, you can deactivate it by simply typing:\ndeactivate\n\n\nConclusion\nPython virtual environments are indispensable tools for managing dependencies and keeping project environments clean and isolated. With the venv module, creating and managing virtual environments has become easier than ever. By following the steps outlined in this guide, you can create a virtual environment, install packages like DataIdea, and develop Python projects with confidence. Happy coding!\n\n\n\n\n Back to top"
+    "text": "About this blog\n\n\n Back to top"
   },
   {
     "objectID": "posts/software/mr_robot_softwares/index.html",
@@ -410,10 +218,221 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "posts/fun_stuff/fpl_standings/index.html",
+    "href": "posts/fun_stuff/fpl_standings/index.html",
+    "title": "Update on DATAIDEA Fantasy Football League Standings",
     "section": "",
-    "text": "About this blog\n\n\n Back to top"
+    "text": "Photo by DATAIDEA\n\n\nHey Fantasy Football aficionados,\nIt’s time for another exciting update on the DATAIDEA Fantasy Football League! With each matchweek passing by, the competition has been heating up, and the leaderboard has seen its fair share of twists and turns. Let’s dive straight into the latest standings and highlights from the league.\n\nCurrent Standings:\nHere’s how the teams stack up on the leaderboard:\n\n\n\nRank\nTeams & Manager\nGW\nTOT\n\n\n\n\n1\nBARCA ya KAHUNGYE\n121\n2042\n\n\n2\nAlBramo FC\n59\n1992\n\n\n3\nLethal Weapon\n98\n1956\n\n\n4\nBrine FC\n121\n1946\n\n\n5\nJumaShafara@DATAIDEA\n39\n1908\n\n\n6\nRwenzori\n111\n1890\n\n\n7\nJ T\n83\n1888\n\n\n8\nGULU UNITED F.C\n101\n1870\n\n\n9\nAJ12\n69\n1854\n\n\n10\nGem Fc\n76\n1852\n\n\n11\nLegends FC\n76\n1795\n\n\n12\nM142 HIMARS\n92\n1748\n\n\n13\nColaz guluz\n59\n1739\n\n\n14\nPaperChaser Of Uganda\n116\n1698\n\n\n\n\n\nHighlights:\n\nBARCA ya KAHUNGYE continues to dominate the league, maintaining their top position with an impressive total score of 2042 points.\nAlBramo FC is trailing closely behind in second place, displaying consistent performance throughout the season.\nJumaShafara@DATAIDEA has climbed up the ranks to secure the fifth position, showcasing the competitive spirit of DATAIDEA’s own fantasy football enthusiasts.\n\n\n\nLooking Ahead:\nAs the league progresses, the competition is only expected to intensify further. With managers strategizing and making crucial transfers, every matchweek brings forth new challenges and opportunities for teams to climb the ranks.\nStay tuned for more updates as the DATAIDEA Fantasy Football League unfolds its thrilling saga of goals, assists, and tactical maneuvers.\nUntil next time, may your fantasy team flourish on the virtual pitch!\nBest regards,\nJuma Shafara\nInstructor, DATAIDEA\n+256771754118 / jumashafara0@gmail.com\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Fun Stuff",
+      "Update on DATAIDEA Fantasy Football League Standings"
+    ]
+  },
+  {
+    "objectID": "posts/data_analysis/data_imputation/index.html",
+    "href": "posts/data_analysis/data_imputation/index.html",
+    "title": "Handling Missing Data",
+    "section": "",
+    "text": "Photo by DATAIDEA",
+    "crumbs": [
+      "Home",
+      "Data Analysis",
+      "Handling Missing Data"
+    ]
+  },
+  {
+    "objectID": "posts/data_analysis/data_imputation/index.html#handling-missing-data",
+    "href": "posts/data_analysis/data_imputation/index.html#handling-missing-data",
+    "title": "Handling Missing Data",
+    "section": "",
+    "text": "Photo by DATAIDEA",
+    "crumbs": [
+      "Home",
+      "Data Analysis",
+      "Handling Missing Data"
+    ]
+  },
+  {
+    "objectID": "posts/data_analysis/data_imputation/index.html#introduction",
+    "href": "posts/data_analysis/data_imputation/index.html#introduction",
+    "title": "Handling Missing Data",
+    "section": "Introduction:",
+    "text": "Introduction:\nMissing data is a common hurdle in data analysis, impacting the reliability of insights drawn from datasets. Python offers a range of solutions to address this issue, some of which we discussed in the earlier weeks. In this notebook, we look into the top three missing data imputation methods in Python—SimpleImputer, KNNImputer, and IterativeImputer from scikit-learn—providing insights into their functionalities and practical considerations. We’ll explore these essential techniques, using the weather dataset.\n# install the libraries for this demonstration\n! pip install dataidea==0.2.5\nfrom dataidea.packages import * \nfrom dataidea.datasets import loadDataset\nfrom dataidea.packages import * imports for us np, pd, plt, etc. loadDataset allows us to load datasets inbuilt in the dataidea library\nweather = loadDataset('weather') \nweather\n\n\n\n\n\n\n\n\nday\n\n\ntemperature\n\n\nwindspead\n\n\nevent\n\n\n\n\n\n\n0\n\n\n01/01/2017\n\n\n32.0\n\n\n6.0\n\n\nRain\n\n\n\n\n1\n\n\n04/01/2017\n\n\nNaN\n\n\n9.0\n\n\nSunny\n\n\n\n\n2\n\n\n05/01/2017\n\n\n28.0\n\n\nNaN\n\n\nSnow\n\n\n\n\n3\n\n\n06/01/2017\n\n\nNaN\n\n\n7.0\n\n\nNaN\n\n\n\n\n4\n\n\n07/01/2017\n\n\n32.0\n\n\nNaN\n\n\nRain\n\n\n\n\n5\n\n\n08/01/2017\n\n\nNaN\n\n\nNaN\n\n\nSunny\n\n\n\n\n6\n\n\n09/01/2017\n\n\nNaN\n\n\nNaN\n\n\nNaN\n\n\n\n\n7\n\n\n10/01/2017\n\n\n34.0\n\n\n8.0\n\n\nCloudy\n\n\n\n\n8\n\n\n11/01/2017\n\n\n40.0\n\n\n12.0\n\n\nSunny\n\n\n\n\n\nweather.isna().sum()\nday            0\ntemperature    4\nwindspead      4\nevent          2\ndtype: int64\nLet’s demonstrate how to use the top three missing data imputation methods—SimpleImputer, KNNImputer, and IterativeImputer—using the simple weather dataset.\n# select age from the data\ntemp_wind = weather[['temperature', 'windspead']].copy()\ntemp_wind_imputed = temp_wind.copy()",
+    "crumbs": [
+      "Home",
+      "Data Analysis",
+      "Handling Missing Data"
+    ]
+  },
+  {
+    "objectID": "posts/data_analysis/data_imputation/index.html#simpleimputer-from-scikit-learn",
+    "href": "posts/data_analysis/data_imputation/index.html#simpleimputer-from-scikit-learn",
+    "title": "Handling Missing Data",
+    "section": "SimpleImputer from scikit-learn:",
+    "text": "SimpleImputer from scikit-learn:\n\nUsage: SimpleImputer is a straightforward method for imputing missing values by replacing them with a constant, mean, median, or most frequent value along each column.\nPros:\n\nEasy to use and understand.\nCan handle both numerical and categorical data.\nOffers flexibility with different imputation strategies.\n\nCons:\n\nIt doesn’t consider relationships between features.\nMay not be the best choice for datasets with complex patterns of missingness.\n\nExample:\n\nfrom sklearn.impute import SimpleImputer\n\nsimple_imputer = SimpleImputer(strategy='mean')\ntemp_wind_simple_imputed = simple_imputer.fit_transform(temp_wind)\n\ntemp_wind_simple_imputed_df = pd.DataFrame(temp_wind_simple_imputed, columns=temp_wind.columns)\nLet’s have a look at the outcome\ntemp_wind_simple_imputed_df\n\n\n\n\n\n\n\n\ntemperature\n\n\nwindspead\n\n\n\n\n\n\n0\n\n\n32.0\n\n\n6.0\n\n\n\n\n1\n\n\n33.2\n\n\n9.0\n\n\n\n\n2\n\n\n28.0\n\n\n8.4\n\n\n\n\n3\n\n\n33.2\n\n\n7.0\n\n\n\n\n4\n\n\n32.0\n\n\n8.4\n\n\n\n\n5\n\n\n33.2\n\n\n8.4\n\n\n\n\n6\n\n\n33.2\n\n\n8.4\n\n\n\n\n7\n\n\n34.0\n\n\n8.0\n\n\n\n\n8\n\n\n40.0\n\n\n12.0",
+    "crumbs": [
+      "Home",
+      "Data Analysis",
+      "Handling Missing Data"
+    ]
+  },
+  {
+    "objectID": "posts/data_analysis/data_imputation/index.html#knnimputer-from-scikit-learn",
+    "href": "posts/data_analysis/data_imputation/index.html#knnimputer-from-scikit-learn",
+    "title": "Handling Missing Data",
+    "section": "KNNImputer from scikit-learn:",
+    "text": "KNNImputer from scikit-learn:\n\nUsage: KNNImputer imputes missing values using k-nearest neighbors, replacing them with the mean value of the nearest neighbors.\nPros:\n\nConsiders relationships between features, making it suitable for datasets with complex patterns of missingness.\nCan handle both numerical and categorical data.\n\nCons:\n\nComputationally expensive for large datasets.\nRequires careful selection of the number of neighbors (k).\n\nExample:\n\nfrom sklearn.impute import KNNImputer\n\nknn_imputer = KNNImputer(n_neighbors=2)\ntemp_wind_knn_imputed = knn_imputer.fit_transform(temp_wind)\n\ntemp_wind_knn_imputed_df = pd.DataFrame(temp_wind_knn_imputed, columns=temp_wind.columns)\nIf we take a look at the outcome\ntemp_wind_knn_imputed_df\n\n\n\n\n\n\n\n\ntemperature\n\n\nwindspead\n\n\n\n\n\n\n0\n\n\n32.0\n\n\n6.0\n\n\n\n\n1\n\n\n33.0\n\n\n9.0\n\n\n\n\n2\n\n\n28.0\n\n\n7.0\n\n\n\n\n3\n\n\n33.0\n\n\n7.0\n\n\n\n\n4\n\n\n32.0\n\n\n7.0\n\n\n\n\n5\n\n\n33.2\n\n\n8.4\n\n\n\n\n6\n\n\n33.2\n\n\n8.4\n\n\n\n\n7\n\n\n34.0\n\n\n8.0\n\n\n\n\n8\n\n\n40.0\n\n\n12.0",
+    "crumbs": [
+      "Home",
+      "Data Analysis",
+      "Handling Missing Data"
+    ]
+  },
+  {
+    "objectID": "posts/data_analysis/data_imputation/index.html#iterativeimputer-from-scikit-learn",
+    "href": "posts/data_analysis/data_imputation/index.html#iterativeimputer-from-scikit-learn",
+    "title": "Handling Missing Data",
+    "section": "IterativeImputer from scikit-learn:",
+    "text": "IterativeImputer from scikit-learn:\n\nUsage: IterativeImputer models each feature with missing values as a function of other features and uses that estimate for imputation. It iteratively estimates the missing values.\nPros:\n\nTakes into account relationships between features, making it suitable for datasets with complex missing patterns.\nMore robust than SimpleImputer for handling missing data.\n\nCons:\n\nCan be computationally intensive and slower than SimpleImputer.\nRequires careful tuning of model parameters.\n\nExample:\n\nfrom sklearn.experimental import enable_iterative_imputer\nfrom sklearn.impute import IterativeImputer\n\niterative_imputer = IterativeImputer()\ntemp_wind_iterative_imputed = iterative_imputer.fit_transform(temp_wind)\n\ntemp_wind_iterative_imputed_df = pd.DataFrame(temp_wind_iterative_imputed, columns=temp_wind.columns)\nLet’s take a look at the outcome\ntemp_wind_iterative_imputed_df\n\n\n\n\n\n\n\n\ntemperature\n\n\nwindspead\n\n\n\n\n\n\n0\n\n\n32.000000\n\n\n6.000000\n\n\n\n\n1\n\n\n35.773287\n\n\n9.000000\n\n\n\n\n2\n\n\n28.000000\n\n\n3.321648\n\n\n\n\n3\n\n\n33.042537\n\n\n7.000000\n\n\n\n\n4\n\n\n32.000000\n\n\n6.238915\n\n\n\n\n5\n\n\n33.545118\n\n\n7.365795\n\n\n\n\n6\n\n\n33.545118\n\n\n7.365795\n\n\n\n\n7\n\n\n34.000000\n\n\n8.000000\n\n\n\n\n8\n\n\n40.000000\n\n\n12.000000",
+    "crumbs": [
+      "Home",
+      "Data Analysis",
+      "Handling Missing Data"
+    ]
+  },
+  {
+    "objectID": "posts/data_analysis/data_imputation/index.html#datawig",
+    "href": "posts/data_analysis/data_imputation/index.html#datawig",
+    "title": "Handling Missing Data",
+    "section": "Datawig:",
+    "text": "Datawig:\nDatawig is a library specifically designed for imputing missing values in tabular data using deep learning models.\n# import datawig\n\n# # Impute missing values\n# df_imputed = datawig.SimpleImputer.complete(weather)\nThese top imputation methods offer different trade-offs in terms of computational complexity, handling of missing data patterns, and ease of use. The choice between them depends on the specific characteristics of the dataset and the requirements of the analysis.",
+    "crumbs": [
+      "Home",
+      "Data Analysis",
+      "Handling Missing Data"
+    ]
+  },
+  {
+    "objectID": "posts/data_analysis/data_imputation/index.html#homework",
+    "href": "posts/data_analysis/data_imputation/index.html#homework",
+    "title": "Handling Missing Data",
+    "section": "Homework",
+    "text": "Homework\n\nTry out these techniques for categorical data",
+    "crumbs": [
+      "Home",
+      "Data Analysis",
+      "Handling Missing Data"
+    ]
+  },
+  {
+    "objectID": "posts/data_analysis/data_imputation/index.html#credit",
+    "href": "posts/data_analysis/data_imputation/index.html#credit",
+    "title": "Handling Missing Data",
+    "section": "Credit",
+    "text": "Credit\n\nDo you seriously want to learn Programming and Data Analysis with Python?\nIf you’re serious about learning Programming, Data Analysis with Python and getting prepared for Data Science roles, I highly encourage you to enroll in my Programming for Data Science Course, which I’ve taught to hundreds of students. Don’t waste your time following disconnected, outdated tutorials\nMy Complete Programming for Data Science Course has everything you need in one place.\nThe course offers:\n\nDuration: Usually 3-4 months\nSessions: Four times a week (one on one)\nLocation: Online or/and at UMF House, Sir Apollo Kagwa Road\n\nWhat you’l learn:\n\nFundamentals of programming\nData manipulation and analysis\nVisualization techniques\nIntroduction to machine learning\nDatabase Management with SQL (optional)\nWeb Development with Django (optional)\n\nBest\nJuma Shafara\nData Scientist, Instructor\njumashafara0@gmail.com / dataideaorg@gmail.com\n+256701520768 / +256771754118",
+    "crumbs": [
+      "Home",
+      "Data Analysis",
+      "Handling Missing Data"
+    ]
+  },
+  {
+    "objectID": "posts/other/creating_venvs/index.html",
+    "href": "posts/other/creating_venvs/index.html",
+    "title": "Python Virtual Environments",
+    "section": "",
+    "text": "Photo by DATAIDEA\n\n\nIn the vast ecosystem of Python programming, managing dependencies can sometimes be a daunting task. As projects grow in complexity, so does the need for a clean and isolated environment where dependencies can be installed without affecting other projects or the system-wide Python installation. This is where Python virtual environments come into play. In this guide, we’ll walk through the process of creating a virtual environment using venv and installing a package, like DataIdea, within it.\n\nWhat is a Python Virtual Environment?\nA virtual environment is a self-contained directory tree that contains a Python installation for a particular version of Python, plus a number of additional packages. It allows you to work on a Python project in isolation, ensuring that your project’s dependencies are maintained separately from other projects or the system Python.\n\n\nStep 1: Setting Up a Virtual Environment\nPython 3 comes with a built-in module called venv, which is used to create virtual environments. To create a virtual environment, open your terminal or command prompt and navigate to the directory where you want to create the environment. Then, run the following command:\n\nOn macOS and Linux:\n\npython3 -m venv myenv\n\nOn Windows:\n\npython -m venv myenv\nReplace myenv with the name you want to give to your virtual environment. This command will create a directory named myenv (or whatever name you provided) containing a Python interpreter and other necessary files.\n\n\nStep 2: Activating the Virtual Environment\nOnce the virtual environment is created, you need to activate it. Activation sets up the environment variables and modifies your shell prompt to indicate that you are now working within the virtual environment. Activate the virtual environment by running the appropriate command for your operating system:\n\nOn macOS and Linux:\n\nsource myenv/bin/activate\n\nOn Windows:\n\nmyenv\\Scripts\\activate\nYou’ll notice that your command prompt changes to show the name of the activated virtual environment.\n\n\nStep 3: Installing Packages\nWith the virtual environment activated, you can now install packages without affecting the global Python installation. Let’s install dataidea, as an example:\npip install dataidea\nyou can replace dataidea with another name of the package you want to install.\n\n\nStep 4: Using dataidea in Your Project\nOnce the package is installed, you can start using it in your Python project. Simply import it in your Python scripts as you would with any other package:\nimport dataidea\n\n\nStep 5: Deactivating the Virtual Environment\nWhen you’re done working on your project and want to leave the virtual environment, you can deactivate it by simply typing:\ndeactivate\n\n\nConclusion\nPython virtual environments are indispensable tools for managing dependencies and keeping project environments clean and isolated. With the venv module, creating and managing virtual environments has become easier than ever. By following the steps outlined in this guide, you can create a virtual environment, install packages like DataIdea, and develop Python projects with confidence. Happy coding!\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "posts/fun_stuff/programmer_puns/index.html",
+    "href": "posts/fun_stuff/programmer_puns/index.html",
+    "title": "Puns Only Programmers Will Get",
+    "section": "",
+    "text": "Photo by DATAIDEA\n\n\nWhat are the best puns? Definitely the ones only a specific group of people will understand and enjoy. Especially in the era we’re living in, we need to feel like a family and share “inside” jokes with one another. So, let’s take a look at some of the best programming puns we came upon during the pre-summer times.\n\nWhy do programmers like dark mode?\n\nBecause light attracts bugs.\n\nI used to work as a programmer for autocorrect…\n\nThen they fried me for no raisin.\n\nWhat do NASA programmers do on the weekends?\n\nThey hit the space bar.\n\nWhy did the programmer quit his job?\n\nBecause he didn’t get arrays.\n\nWhat was the SNES programmers’ favorite drink?\n\nSprite\n\nWhat do programmers do when they’re hungry?\n\nThey grab a byte.\n\nWhy couldn’t the programmer dance to the song?\n\nBecause he didn’t get the… algo-rhythm…\n\nWhat you call it when computer programmers make fun of each other?\n\nCyber boolean…\n\nI am now a successful programmer…\n\nBut back in the days I was a noobgrammer.\n\nWhy do programmers always mix up Halloween and Christmas?\n\nBecause Oct 31 equals Dec 25.\n\nWhy did the programmer get a huge telephone bill?\n\nBecause his program was CALLING a lot of subroutines.\n\nWhat do Spanish programmers code in?\n\nSí ++\n\nWhich way did the programmer go?\n\nHe went data way!\n\nWhy was the programmer always running into walls?\n\nHe couldn’t see sharp.\n\nHow programmers curse?\n\nOh shift!\n\nWhy do programmers make good politicians?\n\nTheir goto is to switch statements.\n\nHow did the programmer lose weight?\n\nHe switched to a byte-sized diet.\n\nI almost bought a huge library out of old computer programming books…\n\nBut the ascii price was way too high.\n\nWhat’s a Jedi’s favorite programming language?\n\nJabbaScript…\n\n\n\nWant to learn programming and become an expert?\nIf you’re serious about learning Programming and getting a job as a Developer, I highly encourage you to enroll in my programming courses for Python, JavaScript, Data Science and Web Development.\nDon’t waste your time following disconnected, outdated tutorials. I can teach you all that you need to kickstart your career.\nContact me at +256771754118 or jumashafara@proton.me\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Fun Stuff",
+      "Puns Only Programmers Will Get"
+    ]
+  },
+  {
+    "objectID": "posts/software/top_5_operating_systems/index.html",
+    "href": "posts/software/top_5_operating_systems/index.html",
+    "title": "To 5 Operating Systems",
+    "section": "",
+    "text": "Thumbnail\nOperating systems are the backbone of modern computing, providing the fundamental software foundation for computers, smartphones, servers, and more. Here’s a comprehensive overview of five prominent operating systems that have made significant impacts in various domains.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "To 5 Operating Systems"
+    ]
+  },
+  {
+    "objectID": "posts/software/top_5_operating_systems/index.html#windows",
+    "href": "posts/software/top_5_operating_systems/index.html#windows",
+    "title": "To 5 Operating Systems",
+    "section": "Windows",
+    "text": "Windows\n\nOverview\nDeveloped by Microsoft, Windows is one of the most widely used operating systems across PCs, servers, and embedded systems. Known for its user-friendly interface and extensive software compatibility, Windows offers a variety of versions tailored for different devices and use cases.\n\n\nFeatures\n\nGUI: Graphical User Interface for intuitive navigation.\nCompatibility: Broad support for software and hardware.\nSecurity: Regular updates and security features.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "To 5 Operating Systems"
+    ]
+  },
+  {
+    "objectID": "posts/software/top_5_operating_systems/index.html#macos",
+    "href": "posts/software/top_5_operating_systems/index.html#macos",
+    "title": "To 5 Operating Systems",
+    "section": "macOS",
+    "text": "macOS\n\nOverview\nExclusive to Apple’s hardware, macOS offers a sleek and intuitive user experience. It is known for its stability, design aesthetics, and seamless integration with other Apple devices and services.\n\n\nFeatures\n\nIntegration: Seamless integration with other Apple devices.\nPerformance: Optimized for Mac hardware.\nSecurity: Built-in encryption and privacy features.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "To 5 Operating Systems"
+    ]
+  },
+  {
+    "objectID": "posts/software/top_5_operating_systems/index.html#linux",
+    "href": "posts/software/top_5_operating_systems/index.html#linux",
+    "title": "To 5 Operating Systems",
+    "section": "Linux",
+    "text": "Linux\n\nOverview\nLinux is an open-source operating system available in various distributions (distros), catering to diverse user needs. Its flexibility, stability, and robustness have made it a favorite among developers, server administrators, and tech enthusiasts.\n\n\nFeatures\n\nOpen Source: Community-driven development and customization.\nVariety: Diverse distributions catering to different needs.\nStability: Known for reliability and performance.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "To 5 Operating Systems"
+    ]
+  },
+  {
+    "objectID": "posts/software/top_5_operating_systems/index.html#android",
+    "href": "posts/software/top_5_operating_systems/index.html#android",
+    "title": "To 5 Operating Systems",
+    "section": "Android",
+    "text": "Android\n\nOverview\nDeveloped by Google, Android is the leading operating system for mobile devices globally. Its open-source nature, customizable interface, and extensive app ecosystem have made it a dominant force in the mobile market.\n\n\nFeatures\n\nCustomization: Ability to personalize interface and features.\nApp Ecosystem: Extensive library of applications.\nIntegration: Seamless integration with Google services.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "To 5 Operating Systems"
+    ]
+  },
+  {
+    "objectID": "posts/software/top_5_operating_systems/index.html#iosipados",
+    "href": "posts/software/top_5_operating_systems/index.html#iosipados",
+    "title": "To 5 Operating Systems",
+    "section": "iOS/iPadOS",
+    "text": "iOS/iPadOS\n\nOverview\nExclusive to Apple’s mobile devices, iOS and iPadOS are renowned for their smooth performance, security features, and seamless integration within the Apple ecosystem.\n\n\nFeatures\n\nPerformance: Smooth and efficient operation on Apple devices.\nSecurity: Robust security measures and privacy controls.\nEcosystem Integration: Seamless integration with other Apple devices.\n\nIn conclusion, these operating systems showcase diversity in terms of architecture, platform support, and features, catering to the varied needs of users across different devices and industries.",
+    "crumbs": [
+      "Home",
+      "Software",
+      "To 5 Operating Systems"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the DATAIDEA blog",
+    "section": "",
+    "text": "Update on DATAIDEA Fantasy Football League Standings\n\n\n\n\n\n\nFun Stuff\n\n\n\n\n\n\n\n\n\nApr 27, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\n\n\n\n\n\n\nPython Virtual Environments\n\n\n\n\n\n\nData Analysis\n\n\nSoftware\n\n\nOther\n\n\n\n\n\n\n\n\n\nApr 25, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\n\n\n\n\n\n\nHandling Missing Data\n\n\n\n\n\n\nData Analysis\n\n\n\n\n\n\n\n\n\nApr 24, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\n\n\n\n\n\n\nPuns Only Programmers Will Get\n\n\n\n\n\n\nFun Stuff\n\n\n\n\n\n\n\n\n\nApr 20, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\n\n\n\n\n\n\nAll Software used in Mr. Robot\n\n\n\n\n\n\nSoftware\n\n\n\n\n\n\n\n\n\nFeb 20, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\n\n\n\n\n\n\nTo 5 Operating Systems\n\n\n\n\n\n\nSoftware\n\n\n\n\n\n\n\n\n\nJan 10, 2024\n\n\nJuma Shafara\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   }
 ]
