@@ -4,6 +4,7 @@ project:
 
 website:
   title: "DATAIDEA"
+  favicon: assets/dataidea-logo.png
   bread-crumbs: false
   page-navigation: true
   repo-actions: [issue]
