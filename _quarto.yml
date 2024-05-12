@@ -20,7 +20,7 @@ website:
         contents:
           - posts/fun_stuff/programmer_puns/index.qmd
           - posts/fun_stuff/fpl_standings/index.md
-          
+
       - section: Software
         contents:
           - posts/software/top_5_operating_systems/index.qmd
@@ -31,23 +31,23 @@ website:
           - "posts/data_analysis/handling_imbalanced_datasets/handling_imbalanced_data.md"
       - section: Other
         contents:
-          - posts/other/creating_venv/index.qmd
+          - "posts/other/creating_venvs/index.md"
   navbar:
     right:
       - text: Home
-        href: 'https://www.dataidea.org/'
+        href: "https://www.dataidea.org/"
       - text: About
-        href: 'https://courses.dataidea.org/about'
+        href: "https://courses.dataidea.org/about"
       - text: Resources
         menu:
-         - text: Materials
-           url: 'https://courses.dataidea.org/'
-         - text: Blog
-           url: 'https://blog.dataidea.org'
-         - text: Forum
-           url: 'https://chat.whatsapp.com/GuCZRyJICgO3Y7MPvDQKhi'
+          - text: Materials
+            url: "https://courses.dataidea.org/"
+          - text: Blog
+            url: "https://blog.dataidea.org"
+          - text: Forum
+            url: "https://chat.whatsapp.com/GuCZRyJICgO3Y7MPvDQKhi"
       - text: Contact
-        href: 'https://courses.dataidea.org/contact'
+        href: "https://courses.dataidea.org/contact"
       - text: FPL
         href: fpl.md
       - icon: twitter
@@ -57,6 +57,3 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-
-
-
