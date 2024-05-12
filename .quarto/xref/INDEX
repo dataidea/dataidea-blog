@@ -70,5 +70,8 @@
   },
   "fpl.md": {
     "fpl.html": "406c9f9e"
+  },
+  "posts/data_analysis/handling_imbalanced_datasets/handling_imbalanced_data.md": {
+    "handling_imbalanced_data.html": "7857d42b"
   }
 }

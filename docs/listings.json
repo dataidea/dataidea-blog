@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/data_analysis/handling_imbalanced_datasets/handling_imbalanced_data.html",
       "/posts/fun_stuff/fpl_standings/index.html",
       "/posts/other/creating_venvs/index.html",
       "/posts/data_analysis/data_imputation/index.html",
