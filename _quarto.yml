@@ -14,24 +14,6 @@ website:
   description: "Learn Programming For Data Science"
   repo-branch: main
   repo-url: "https://github.com/dataidea/dataidea-blog"
-  sidebar:
-    contents:
-      - section: Fun Stuff
-        contents:
-          - posts/fun_stuff/programmer_puns/index.qmd
-          - posts/fun_stuff/fpl_standings/index.md
-
-      - section: Software
-        contents:
-          - posts/software/top_5_operating_systems/index.qmd
-          - posts/software/mr_robot_softwares/index.qmd
-      - section: Data Analysis
-        contents:
-          - "posts/data_analysis/data_imputation/index.qmd"
-          - "posts/data_analysis/handling_imbalanced_datasets/handling_imbalanced_data.md"
-      - section: Other
-        contents:
-          - "posts/other/creating_venvs/index.md"
   navbar:
     right:
       - text: Home
