@@ -73,5 +73,32 @@
   },
   "posts/data_analysis/handling_imbalanced_datasets/handling_imbalanced_data.md": {
     "handling_imbalanced_data.html": "7857d42b"
+  },
+  "posts/mr_robot_softwares/index.qmd": {
+    "index.html": "60d029ce"
+  },
+  "posts/data_imputation/index.qmd": {
+    "index.html": "aebebe66"
+  },
+  "posts/creating_venvs/index.md": {
+    "index.html": "fae6b06c"
+  },
+  "posts/fpl_standings/index.md": {
+    "index.html": "3030f20c"
+  },
+  "posts/budget_ml_deploy_options/index.md": {
+    "index.html": "aec5603b"
+  },
+  "posts/programmer_puns/index.qmd": {
+    "index.html": "010fb519"
+  },
+  "posts/ml_model_deployment/index.md": {
+    "index.html": "6942b989"
+  },
+  "posts/top_5_operating_systems/index.qmd": {
+    "index.html": "c71c231a"
+  },
+  "posts/handling_imbalanced_datasets/handling_imbalanced_data.md": {
+    "handling_imbalanced_data.html": "ae738bd9"
   }
 }

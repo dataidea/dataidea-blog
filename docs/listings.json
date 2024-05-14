@@ -2,13 +2,15 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/data_analysis/handling_imbalanced_datasets/handling_imbalanced_data.html",
-      "/posts/fun_stuff/fpl_standings/index.html",
-      "/posts/other/creating_venvs/index.html",
-      "/posts/data_analysis/data_imputation/index.html",
-      "/posts/fun_stuff/programmer_puns/index.html",
-      "/posts/software/mr_robot_softwares/index.html",
-      "/posts/software/top_5_operating_systems/index.html"
+      "/posts/budget_ml_deploy_options/index.html",
+      "/posts/ml_model_deployment/index.html",
+      "/posts/handling_imbalanced_datasets/handling_imbalanced_data.html",
+      "/posts/fpl_standings/index.html",
+      "/posts/creating_venvs/index.html",
+      "/posts/data_imputation/index.html",
+      "/posts/programmer_puns/index.html",
+      "/posts/mr_robot_softwares/index.html",
+      "/posts/top_5_operating_systems/index.html"
     ]
   }
 ]
