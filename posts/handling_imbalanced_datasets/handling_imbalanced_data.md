@@ -582,3 +582,16 @@ pd.DataFrame(data=classification_report(y_test, y_pred_ada, output_dict=True)).t
 By utilizing ensemble methods like Random Forest and AdaBoost, you can often achieve better performance on imbalanced datasets compared to individual classifiers, as these methods inherently mitigate the effects of class imbalance through their construction.
 
 These are just a few techniques for handling imbalanced datasets. It's crucial to experiment with different methods and evaluate their performance using appropriate evaluation metrics to find the best approach for your specific problem.
+
+A few ads maybe displayed for income as resources are now offered freely. 🤝🤝🤝
+
+<!-- Insert AdSense script dynamically -->
+<script>
+    (function() {
+        var adScript = document.createElement('script');
+        adScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238';
+        adScript.async = true;
+        adScript.crossorigin="anonymous"
+        document.head.appendChild(adScript);
+    })();
+</script>

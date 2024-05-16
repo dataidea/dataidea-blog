@@ -527,3 +527,14 @@ Data Scientist, Instructor
 jumashafara0@gmail.com / dataideaorg@gmail.com
 
 +256701520768 / +256771754118
+
+<!-- Insert AdSense script dynamically -->
+<script>
+    (function() {
+        var adScript = document.createElement('script');
+        adScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238';
+        adScript.async = true;
+        adScript.crossorigin="anonymous"
+        document.head.appendChild(adScript);
+    })();
+</script>

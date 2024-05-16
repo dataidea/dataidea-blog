@@ -112,3 +112,16 @@ For specific use cases where you need low latency and reduced data transfer cost
 5. **Use Spot Instances:** For non-critical workloads, consider using spot instances, which are significantly cheaper than regular instances.
 
 By carefully selecting your deployment strategy and optimizing your resources, you can deploy machine learning models effectively without exceeding your budget.
+
+A few ads maybe displayed for income as resources are now offered freely. 🤝🤝🤝
+
+<!-- Insert AdSense script dynamically -->
+<script>
+    (function() {
+        var adScript = document.createElement('script');
+        adScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238';
+        adScript.async = true;
+        adScript.crossorigin="anonymous"
+        document.head.appendChild(adScript);
+    })();
+</script>

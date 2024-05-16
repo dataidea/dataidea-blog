@@ -18,11 +18,13 @@ A virtual environment is a self-contained directory tree that contains a Python 
 Python 3 comes with a built-in module called `venv`, which is used to create virtual environments. To create a virtual environment, open your terminal or command prompt and navigate to the directory where you want to create the environment. Then, run the following command:
 
 - **On macOS and Linux:**
+
 ```bash
 python3 -m venv myenv
 ```
 
 - **On Windows:**
+
 ```bash
 python -m venv myenv
 ```
@@ -34,11 +36,13 @@ Replace `myenv` with the name you want to give to your virtual environment. This
 Once the virtual environment is created, you need to activate it. Activation sets up the environment variables and modifies your shell prompt to indicate that you are now working within the virtual environment. Activate the virtual environment by running the appropriate command for your operating system:
 
 - **On macOS and Linux:**
+
 ```bash
 source myenv/bin/activate
 ```
 
 - **On Windows:**
+
 ```bash
 myenv\Scripts\activate
 ```
@@ -74,3 +78,16 @@ deactivate
 ### Conclusion
 
 Python virtual environments are indispensable tools for managing dependencies and keeping project environments clean and isolated. With the `venv` module, creating and managing virtual environments has become easier than ever. By following the steps outlined in this guide, you can create a virtual environment, install packages like DataIdea, and develop Python projects with confidence. Happy coding!
+
+A few ads maybe displayed for income as resources are now offered freely. 🤝🤝🤝
+
+<!-- Insert AdSense script dynamically -->
+<script>
+    (function() {
+        var adScript = document.createElement('script');
+        adScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238';
+        adScript.async = true;
+        adScript.crossorigin="anonymous"
+        document.head.appendChild(adScript);
+    })();
+</script>

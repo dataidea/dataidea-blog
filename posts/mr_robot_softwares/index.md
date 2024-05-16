@@ -74,10 +74,22 @@ Framaroot - called RooterFrame in the show - is used by Tyrell Wellick in season
 
 SuperSU is an app that managed superuser privileges on rooted Android phones. In season 1, episode 3 Tyrell Wellick covertly installs FlexiSPY - which uses SuperSU to give itself superuser access - on a co-worker's Android phone in order to get access to secret information about who is going to be the next chief technology officer of Evil Corp.
 
-
 # Want to learn programming and become an expert?
 
 If you’re serious about learning Programming and getting a job as a Developer, I
-highly encourage you to enroll in my programming courses for Python, JavaScript, Data Science and Web Development.  
+highly encourage you to enroll in my programming courses for Python, JavaScript, Data Science and Web Development.
 
 Don’t waste your time following disconnected, outdated tutorials. I can teach you all that you need to kickstart your career. Contact me at <a href="tel:+256771754118">+256771754118</a> or <a href="mailto:jumashafara@proton.me">jumashafara@proton.me</a>
+
+A few ads maybe displayed for income as resources are now offered freely. 🤝🤝🤝
+
+<!-- Insert AdSense script dynamically -->
+<script>
+    (function() {
+        var adScript = document.createElement('script');
+        adScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238';
+        adScript.async = true;
+        adScript.crossorigin="anonymous"
+        document.head.appendChild(adScript);
+    })();
+</script>
