@@ -19,7 +19,13 @@ website:
       - text: Home
         href: "https://www.dataidea.org/"
       - text: About
-        href: "https://courses.dataidea.org/about"
+        menu:
+          - text: About Us
+            url: "https://dataidea.org/#about"
+          - text: Privacy Policy
+            url: "https://dataidea.org/privacy_policy.html"
+          - text: Terms of Service
+            url: "https://dataidea.org/terms_of_service.html"
       - text: Resources
         menu:
           - text: Materials
