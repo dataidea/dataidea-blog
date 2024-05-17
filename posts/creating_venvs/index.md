@@ -31,6 +31,21 @@ python -m venv myenv
 
 Replace `myenv` with the name you want to give to your virtual environment. This command will create a directory named `myenv` (or whatever name you provided) containing a Python interpreter and other necessary files.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238"
+     crossorigin="anonymous"></script>
+<!-- inline-square -->
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8076040302380238"
+     data-ad-slot="3564352555"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ### Step 2: Activating the Virtual Environment
 
 Once the virtual environment is created, you need to activate it. Activation sets up the environment variables and modifies your shell prompt to indicate that you are now working within the virtual environment. Activate the virtual environment by running the appropriate command for your operating system:
@@ -49,6 +64,21 @@ myenv\Scripts\activate
 
 You'll notice that your command prompt changes to show the name of the activated virtual environment.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238"
+     crossorigin="anonymous"></script>
+<!-- inline-square -->
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8076040302380238"
+     data-ad-slot="3564352555"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ### Step 3: Installing Packages
 
 With the virtual environment activated, you can now install packages without affecting the global Python installation. Let's install `dataidea`, as an example:
@@ -66,6 +96,21 @@ Once the package is installed, you can start using it in your Python project. Si
 ```python
 import dataidea
 ```
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238"
+     crossorigin="anonymous"></script>
+<!-- inline-square -->
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8076040302380238"
+     data-ad-slot="3564352555"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### Step 5: Deactivating the Virtual Environment
 
