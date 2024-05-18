@@ -112,5 +112,14 @@
   },
   "posts/top_5_operating_systems/index.md": {
     "index.html": "5e6cd1b2"
+  },
+  "posts/time_series_analysis/index.md": {
+    "index.html": "7288a59b"
+  },
+  "posts/time_series_forecasting/index.md": {
+    "index.html": "2147020c"
+  },
+  "posts/time_series_intro/index.md": {
+    "index.html": "2ebaae45"
   }
 }

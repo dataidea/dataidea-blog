@@ -2,7 +2,7 @@
 title: Budget-Friendly Options for Deploying Machine Learning Models
 author: "Juma Shafara"
 date: "2024-05-14"
-categories: [Data Analysis, AI, Software, Other]
+categories: [AI, Software, Other]
 ---
 
 ## Budget-Friendly Options for Deploying Machine Learning Models

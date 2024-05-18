@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Juma Shafara">
-<meta name="dcterms.date" content="2024-05-14">
+<meta name="dcterms.date" content="2024-05-18">
 
-<title>DATAIDEA - Exploring Options for Deploying Machine Learning Models</title>
+<title>DATAIDEA - Time Series Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -162,12 +191,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Exploring Options for Deploying Machine Learning Models</h1>
+      <h1 class="title">Time Series Analysis</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Data Analysis</div>
-                <div class="quarto-category">AI</div>
-                <div class="quarto-category">Software</div>
-                <div class="quarto-category">Other</div>
               </div>
                   </div>
   </div>
@@ -185,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 14, 2024</p>
+        <p class="date">May 18, 2024</p>
       </div>
     </div>
     
@@ -201,17 +227,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#exploring-options-for-deploying-machine-learning-models" id="toc-exploring-options-for-deploying-machine-learning-models" class="nav-link active" data-scroll-target="#exploring-options-for-deploying-machine-learning-models">Exploring Options for Deploying Machine Learning Models</a>
+  <li><a href="#time-series-analysis" id="toc-time-series-analysis" class="nav-link active" data-scroll-target="#time-series-analysis">Time Series Analysis</a>
   <ul class="collapse">
-  <li><a href="#cloud-based-deployment" id="toc-cloud-based-deployment" class="nav-link" data-scroll-target="#cloud-based-deployment">Cloud-based Deployment</a></li>
-  <li><a href="#on-premises-deployment" id="toc-on-premises-deployment" class="nav-link" data-scroll-target="#on-premises-deployment">On-premises Deployment</a></li>
-  <li><a href="#edge-deployment" id="toc-edge-deployment" class="nav-link" data-scroll-target="#edge-deployment">Edge Deployment</a></li>
-  <li><a href="#hybrid-deployment" id="toc-hybrid-deployment" class="nav-link" data-scroll-target="#hybrid-deployment">Hybrid Deployment</a></li>
-  <li><a href="#serverless-deployment" id="toc-serverless-deployment" class="nav-link" data-scroll-target="#serverless-deployment">Serverless Deployment</a></li>
-  <li><a href="#api-based-deployment" id="toc-api-based-deployment" class="nav-link" data-scroll-target="#api-based-deployment">API-based Deployment</a></li>
-  <li><a href="#batch-processing" id="toc-batch-processing" class="nav-link" data-scroll-target="#batch-processing">Batch Processing</a></li>
+  <li><a href="#air-passengers-data-set" id="toc-air-passengers-data-set" class="nav-link" data-scroll-target="#air-passengers-data-set">Air Passengers Data Set</a></li>
   </ul></li>
-  <li><a href="#key-considerations-for-model-deployment" id="toc-key-considerations-for-model-deployment" class="nav-link" data-scroll-target="#key-considerations-for-model-deployment">Key Considerations for Model Deployment</a></li>
+  <li><a href="#decomposition-of-time-series" id="toc-decomposition-of-time-series" class="nav-link" data-scroll-target="#decomposition-of-time-series">Decomposition of Time Series</a></li>
+  <li><a href="#stationary-data" id="toc-stationary-data" class="nav-link" data-scroll-target="#stationary-data">Stationary Data</a></li>
+  <li><a href="#test-for-stationarity" id="toc-test-for-stationarity" class="nav-link" data-scroll-target="#test-for-stationarity">Test for Stationarity</a>
+  <ul class="collapse">
+  <li><a href="#rolling-statistics" id="toc-rolling-statistics" class="nav-link" data-scroll-target="#rolling-statistics">Rolling Statistics</a></li>
+  <li><a href="#augmented-dickey-fuller-adf-test" id="toc-augmented-dickey-fuller-adf-test" class="nav-link" data-scroll-target="#augmented-dickey-fuller-adf-test">Augmented Dickey Fuller (ADF) Test</a></li>
+  </ul></li>
+  <li><a href="#convert-non-stationary-data-to-stationary-data" id="toc-convert-non-stationary-data-to-stationary-data" class="nav-link" data-scroll-target="#convert-non-stationary-data-to-stationary-data">Convert Non-Stationary Data to Stationary Data</a>
+  <ul class="collapse">
+  <li><a href="#differencing" id="toc-differencing" class="nav-link" data-scroll-target="#differencing">Differencing</a></li>
+  <li><a href="#transformation" id="toc-transformation" class="nav-link" data-scroll-target="#transformation">Transformation</a></li>
+  <li><a href="#moving-average" id="toc-moving-average" class="nav-link" data-scroll-target="#moving-average">Moving Average</a></li>
+  </ul></li>
+  <li><a href="#correlation" id="toc-correlation" class="nav-link" data-scroll-target="#correlation">Correlation</a>
+  <ul class="collapse">
+  <li><a href="#auto-correlation-function-acf" id="toc-auto-correlation-function-acf" class="nav-link" data-scroll-target="#auto-correlation-function-acf">Auto Correlation Function (ACF)</a></li>
+  <li><a href="#partial-auto-correlation-function-pacf" id="toc-partial-auto-correlation-function-pacf" class="nav-link" data-scroll-target="#partial-auto-correlation-function-pacf">Partial Auto Correlation Function (PACF)</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/dataidea/dataidea-blog/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -222,112 +259,163 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="exploring-options-for-deploying-machine-learning-models" class="level2">
-<h2 class="anchored" data-anchor-id="exploring-options-for-deploying-machine-learning-models">Exploring Options for Deploying Machine Learning Models</h2>
+<section id="time-series-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="time-series-analysis">Time Series Analysis</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="thumbnail.png" class="img-fluid figure-img"></p>
 <figcaption>Photo by DATAIDEA</figcaption>
 </figure>
 </div>
-<p>Deploying machine learning models is a crucial step in turning your data science projects into practical, real-world applications. With a variety of deployment options available, it’s essential to choose the one that best fits your needs. In this blog, we’ll explore the different deployment options and help you determine the best approach for your machine learning models.</p>
-<section id="cloud-based-deployment" class="level3">
-<h3 class="anchored" data-anchor-id="cloud-based-deployment">Cloud-based Deployment</h3>
-<p>Cloud platforms provide scalable and flexible environments for deploying machine learning models, making them a popular choice. Here’s a look at some of the leading cloud services:</p>
-<p><strong>Amazon Web Services (AWS):</strong></p>
-<ul>
-<li><strong>SageMaker:</strong> A comprehensive service that offers tools to build, train, and deploy models at scale.</li>
-<li><strong>Lambda:</strong> Ideal for deploying lightweight models that need to respond to API requests.</li>
-<li><strong>EC2 Instances:</strong> Customizable virtual servers suitable for deploying larger, more complex models.</li>
-</ul>
-<p><strong>Google Cloud Platform (GCP):</strong></p>
-<ul>
-<li><strong>AI Platform:</strong> An integrated toolset designed for deploying and managing models efficiently.</li>
-<li><strong>Cloud Functions:</strong> A serverless environment perfect for lightweight model deployments.</li>
-<li><strong>Compute Engine:</strong> Scalable virtual machines for more extensive and customized deployments.</li>
-</ul>
-<p><strong>Microsoft Azure:</strong></p>
-<ul>
-<li><strong>Azure Machine Learning:</strong> An end-to-end platform for building, training, and deploying models.</li>
-<li><strong>Azure Functions:</strong> Serverless compute service ideal for deploying lightweight models.</li>
-<li><strong>Virtual Machines:</strong> Provide a custom deployment environment tailored to your needs.</li>
-</ul>
-</section>
-<section id="on-premises-deployment" class="level3">
-<h3 class="anchored" data-anchor-id="on-premises-deployment">On-premises Deployment</h3>
-<p>For organizations that require control over their infrastructure due to security, compliance, or performance needs, on-premises deployment is an excellent choice. Here are some options:</p>
-<ul>
-<li><strong>Docker Containers:</strong> Ensures consistency across different environments by containerizing models.</li>
-<li><strong>Kubernetes:</strong> Manages and orchestrates containerized applications, offering scaling and management capabilities.</li>
-<li><strong>Dedicated Hardware:</strong> Utilizes specific hardware like GPUs or TPUs for high-performance requirements.</li>
-</ul>
-</section>
-<section id="edge-deployment" class="level3">
-<h3 class="anchored" data-anchor-id="edge-deployment">Edge Deployment</h3>
-<p>Edge deployment is perfect for real-time processing and reduced latency by deploying models on edge devices like IoT devices and mobile phones. Some popular solutions include:</p>
-<ul>
-<li><strong>TensorFlow Lite:</strong> Deploys TensorFlow models on mobile and embedded devices.</li>
-<li><strong>ONNX Runtime:</strong> Runs models trained in various frameworks on edge devices.</li>
-<li><strong>NVIDIA Jetson:</strong> A platform for deploying AI models on edge devices with GPU acceleration.</li>
-</ul>
-</section>
-<section id="hybrid-deployment" class="level3">
-<h3 class="anchored" data-anchor-id="hybrid-deployment">Hybrid Deployment</h3>
-<p>Hybrid deployment combines multiple environments to leverage the advantages of each. For example, you might use the cloud for training and initial deployment but edge devices for inference to minimize latency and bandwidth usage.</p>
-</section>
-<section id="serverless-deployment" class="level3">
-<h3 class="anchored" data-anchor-id="serverless-deployment">Serverless Deployment</h3>
-<p>Serverless computing allows you to deploy models without managing the underlying infrastructure. This option is ideal for applications with variable traffic and includes services like:</p>
-<ul>
-<li><strong>AWS Lambda</strong></li>
-<li><strong>Google Cloud Functions</strong></li>
-<li><strong>Azure Functions</strong></li>
-</ul>
-<p>These services automatically scale with the load, simplifying the deployment process.</p>
-</section>
-<section id="api-based-deployment" class="level3">
-<h3 class="anchored" data-anchor-id="api-based-deployment">API-based Deployment</h3>
-<p>Exposing your model as a web service via RESTful or GraphQL APIs is a flexible and widely used approach. This allows various applications and services to access your model via HTTP requests. Some popular frameworks include:</p>
-<ul>
-<li><strong>Flask/Django:</strong> Web application frameworks for Python.</li>
-<li><strong>FastAPI:</strong> A modern, high-performance web framework for building APIs with Python 3.7+.</li>
-<li><strong>TensorFlow Serving:</strong> Serves TensorFlow models as APIs, streamlining deployment.</li>
-</ul>
-</section>
-<section id="batch-processing" class="level3">
-<h3 class="anchored" data-anchor-id="batch-processing">Batch Processing</h3>
-<p>When real-time inference isn’t necessary, batch processing is a great option for handling large volumes of data at scheduled intervals. Key tools include:</p>
-<ul>
-<li><strong>Apache Spark:</strong> A unified analytics engine for large-scale data processing.</li>
-<li><strong>Hadoop:</strong> A framework for distributed storage and processing of big data.</li>
-</ul>
-</section>
-</section>
-<section id="key-considerations-for-model-deployment" class="level2">
-<h2 class="anchored" data-anchor-id="key-considerations-for-model-deployment">Key Considerations for Model Deployment</h2>
-<p>When deciding on a deployment option, keep these factors in mind:</p>
-<ul>
-<li><strong>Scalability:</strong> Can the solution handle the expected load?</li>
-<li><strong>Latency:</strong> Is real-time inference required?</li>
-<li><strong>Cost:</strong> What are the costs associated with running the model in production?</li>
-<li><strong>Security:</strong> Does the deployment meet your security and compliance requirements?</li>
-<li><strong>Ease of Use:</strong> How straightforward is it to deploy, manage, and update the model?</li>
-<li><strong>Integration:</strong> How well does the deployment option integrate with your existing systems and workflows?</li>
-</ul>
-<p>Selecting the right deployment option is essential for balancing performance, cost, and operational complexity. By carefully considering your specific requirements and constraints, you can ensure a successful deployment of your machine learning models.</p>
-<p>A few ads maybe displayed for income as resources are now offered freely. 🤝🤝🤝</p>
-<!-- Insert AdSense script dynamically -->
+<p>As name suggest its analysis of the time series data to identify the patterns in it. I will briefly explain the different techniques and test for time series data analysis.</p>
+<section id="air-passengers-data-set" class="level3">
+<h3 class="anchored" data-anchor-id="air-passengers-data-set">Air Passengers Data Set</h3>
+<p>We have a monthly time series data of the air passengers from 1 Jan 1949 to 1 Dec 1960. Each row contains the air passenger number for a month of that particular year. Objective is to build a model to forecast the air passenger traffic for future months.</p>
+[ad]
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238" crossorigin="anonymous"></script>
+<!-- inline_horizontal -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8076040302380238" data-ad-slot="9021194372" data-ad-format="auto" data-full-width-responsive="true">
+</ins>
 <script>
-    (function() {
-        var adScript = document.createElement('script');
-        adScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238';
-        adScript.async = true;
-        adScript.crossorigin="anonymous"
-        document.head.appendChild(adScript);
-    })();
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+</section>
+<section id="decomposition-of-time-series" class="level2">
+<h2 class="anchored" data-anchor-id="decomposition-of-time-series">Decomposition of Time Series</h2>
+<p>Time series decomposition helps to deconstruct the time series into several component like trend and seasonality for better visualization of its characteristics. Using time-series decomposition makes it easier to quickly identify a changing mean or variation in the data</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/Decomposition_of_Time_Series.png" class="img-fluid figure-img"></p>
+<figcaption>Decomposition_of_Time_Series</figcaption>
+</figure>
+</div>
+</section>
+<section id="stationary-data" class="level2">
+<h2 class="anchored" data-anchor-id="stationary-data">Stationary Data</h2>
+<p>For accurate analysis and forecasting trend and seasonality is removed from the time series and converted it into stationary series. Time series data is said to be stationary when statistical properties like mean, standard deviation are constant and there is no seasonality. In other words statistical properties of the time series data should not be a function of time.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/Stationarity.png" class="img-fluid figure-img"></p>
+<figcaption>Stationarity</figcaption>
+</figure>
+</div>
+</section>
+<section id="test-for-stationarity" class="level2">
+<h2 class="anchored" data-anchor-id="test-for-stationarity">Test for Stationarity</h2>
+<p>Easy way is to look at the plot and look for any obvious trend or seasonality. While working on real world data we can also use more sophisticated methods like rolling statistic and Augmented Dickey Fuller test to check stationarity of the data.</p>
+<section id="rolling-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="rolling-statistics">Rolling Statistics</h3>
+<p>In rolling statistics technique we define a size of window to calculate the mean and standard deviation throughout the series. For stationary series mean and standard deviation shouldn’t change with time.</p>
+</section>
+<section id="augmented-dickey-fuller-adf-test" class="level3">
+<h3 class="anchored" data-anchor-id="augmented-dickey-fuller-adf-test">Augmented Dickey Fuller (ADF) Test</h3>
+<p>I won’t go into the details of how this test works. I will concentrate more on how to interpret the result of this test to determine the stationarity of the series. ADF test will return ‘p-value’ and ‘Test Statistics’ output values. * <strong>p-value &gt; 0.05</strong>: non-stationary. * <strong>p-value &lt;= 0.05</strong>: stationary. * <strong>Test statistics</strong>: More negative this value more likely we have stationary series. Also, this value should be smaller than critical values(1%, 5%, 10%). For e.g.&nbsp;If test statistic is smaller than the 5% critical values, then we can say with 95% confidence that this is a stationary series</p>
+[ad]
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238" crossorigin="anonymous"></script>
+<!-- inline_horizontal -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8076040302380238" data-ad-slot="9021194372" data-ad-format="auto" data-full-width-responsive="true">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+</section>
+<section id="convert-non-stationary-data-to-stationary-data" class="level2">
+<h2 class="anchored" data-anchor-id="convert-non-stationary-data-to-stationary-data">Convert Non-Stationary Data to Stationary Data</h2>
+<p>Accounting for the time series data characteristics like trend and seasonality is called as making data stationary. So by making the mean and variance of the time series constant, we will get the stationary data. Below are the few technique used for the same…</p>
+<section id="differencing" class="level3">
+<h3 class="anchored" data-anchor-id="differencing">Differencing</h3>
+<p>Differencing technique helps to remove the trend and seasonality from time series data. Differencing is performed by subtracting the previous observation from the current observation. The differenced data will contain one less data point than original data. So differencing actually reduces the number of observations and stabilize the mean of a time series.</p>
+<p><span class="math display">\[d = t - t0\]</span></p>
+<p>After performing the differencing it’s recommended to plot the data and visualize the change. In case there is not sufficient improvement you can perform second order or even third order differencing.</p>
+</section>
+<section id="transformation" class="level3">
+<h3 class="anchored" data-anchor-id="transformation">Transformation</h3>
+<p>A simple but often effective way to stabilize the variance across time is to apply a power transformation to the time series. Log, square root, cube root are most commonly used transformation techniques. Most of the time you can pick the type of growth of the time series and accordingly choose the transformation method. For. e.g.&nbsp;A time series that has a quadratic growth trend can be made linear by taking the square root. In case differencing don’t work, you may first want to use one of above transformation technique to remove the variation from the series.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/Log_Transformation.png" class="img-fluid figure-img"></p>
+<figcaption>Log_Transformation</figcaption>
+</figure>
+</div>
+</section>
+<section id="moving-average" class="level3">
+<h3 class="anchored" data-anchor-id="moving-average">Moving Average</h3>
+<p>In moving averages technique, a new series is created by taking the averages of data points from original series. In this technique we can use two or more raw data points to calculate the average. This is also called as ‘window width (w)’. Once window width is decided, averages are calculated from start to the end for each set of w consecutive values, hence the name moving averages. It can also be used for time series forecasting.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/Moving_Average.png" class="img-fluid figure-img"></p>
+<figcaption>Moving_Average</figcaption>
+</figure>
+</div>
+<section id="weighted-moving-averageswma" class="level4">
+<h4 class="anchored" data-anchor-id="weighted-moving-averageswma">Weighted Moving Averages(WMA)</h4>
+<p>WMA is a technical indicator that assigns a greater weighting to the most recent data points, and less weighting to data points in the distant past. The WMA is obtained by multiplying each number in the data set by a predetermined weight and summing up the resulting values. There can be many techniques for assigning weights. A popular one is exponentially weighted moving average where weights are assigned to all the previous values with a decay factor.</p>
+</section>
+<section id="centered-moving-averagescms" class="level4">
+<h4 class="anchored" data-anchor-id="centered-moving-averagescms">Centered Moving Averages(CMS)</h4>
+<p>In a centered moving average, the value of the moving average at time t is computed by centering the window around time t and averaging across the w values within the window. For example, a center moving average with a window of 3 would be calculated as</p>
+<p><span class="math display">\[CMA(t) = mean(t-1, t, t+1)\]</span></p>
+<p>CMA is very useful for visualizing the time series data</p>
+</section>
+<section id="trailing-moving-averagestma" class="level4">
+<h4 class="anchored" data-anchor-id="trailing-moving-averagestma">Trailing Moving Averages(TMA)</h4>
+<p>In trailing moving average, instead of averaging over a window that is centered around a time period of interest, it simply takes the average of the last w values. For example, a trailing moving average with a window of 3 would be calculated as:</p>
+<p><span class="math display">\[TMA(t) = mean(t-2, t-1, t)\]</span></p>
+<p>TMA are useful for forecasting.</p>
+[ad]
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238" crossorigin="anonymous"></script>
+<!-- inline-square -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8076040302380238" data-ad-slot="3564352555" data-ad-format="auto" data-full-width-responsive="true">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+</section>
+</section>
+<section id="correlation" class="level2">
+<h2 class="anchored" data-anchor-id="correlation">Correlation</h2>
+<ul>
+<li>Most important point about values in time series is its dependence on the previous values.</li>
+<li>We can calculate the correlation for time series observations with previous time steps, called as lags.</li>
+<li>Because the correlation of the time series observations is calculated with values of the same series at previous times, this is called an autocorrelation or serial correlation.</li>
+<li>To understand it better lets consider the example of fish prices. We will use below notation to represent the fish prices.
+<ul>
+<li><span class="math inline">\(P(t)\)</span>= Fish price of today</li>
+<li><span class="math inline">\(P(t-1)\)</span> = Fish price of last month</li>
+<li><span class="math inline">\(P(t-2)\)</span> =Fish price of last to last month</li>
+</ul></li>
+<li>Time series of fish prices can be represented as <span class="math inline">\(P(t-n),..... P(t-3), P(t-2),P(t-1), P(t)\)</span></li>
+<li>So if we have fish prices for last few months then it will be easy for us to predict the fish price for today (Here we are ignoring all other external factors that may affect the fish prices)</li>
+</ul>
+<p>All the past and future data points are related in time series and ACF and PACF functions help us to determine correlation in it.</p>
+<section id="auto-correlation-function-acf" class="level3">
+<h3 class="anchored" data-anchor-id="auto-correlation-function-acf">Auto Correlation Function (ACF)</h3>
+<ul>
+<li>ACF tells you how correlated points are with each other, based on how many time steps they are separated by.</li>
+<li>Now to understand it better lets consider above example of fish prices. Let’s try to find the correlation between fish price for current month P(t) and two months ago P(t-2). Important thing to note that, fish price of two months ago can directly affect the today’s fish price or it can indirectly affect the fish price through last months price P(t-1)</li>
+<li>So ACF consider the direct as well indirect effect between the points while determining the correlation</li>
+</ul>
+</section>
+<section id="partial-auto-correlation-function-pacf" class="level3">
+<h3 class="anchored" data-anchor-id="partial-auto-correlation-function-pacf">Partial Auto Correlation Function (PACF)</h3>
+<ul>
+<li>Unlike ACF, PACF only consider the direct effect between the points while determining the correlation</li>
+<li>In case of above fish price example PACF will determine the correlation between fish price for current month P(t) and two months ago P(t-2) by considering only P(t) and P(t-2) and ignoring P(t-1)</li>
+</ul>
+[ad]
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238" crossorigin="anonymous"></script>
+<!-- inline-square -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8076040302380238" data-ad-slot="3564352555" data-ad-format="auto" data-full-width-responsive="true">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

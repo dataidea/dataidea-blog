@@ -28,7 +28,7 @@ website:
             url: "https://dataidea.org/terms_of_service.html"
       - text: Resources
         menu:
-          - text: Materials
+          - text: Courses
             url: "https://courses.dataidea.org/"
           - text: Blog
             url: "https://blog.dataidea.org"
