@@ -267,11 +267,12 @@ window.Quarto = {
 <figcaption>Photo by DATAIDEA</figcaption>
 </figure>
 </div>
+<p>This is part 2 of our Time Series Analysis Series, <a href="https://blog.dataidea.org/posts/time_series_intro/">Part 1</a> introduces you to what time series is. The link to part 1 is <a href="https://blog.dataidea.org/posts/time_series_intro/">here</a></p>
 <p>As name suggest its analysis of the time series data to identify the patterns in it. I will briefly explain the different techniques and test for time series data analysis.</p>
 <section id="air-passengers-data-set" class="level3">
 <h3 class="anchored" data-anchor-id="air-passengers-data-set">Air Passengers Data Set</h3>
 <p>We have a monthly time series data of the air passengers from 1 Jan 1949 to 1 Dec 1960. Each row contains the air passenger number for a month of that particular year. Objective is to build a model to forecast the air passenger traffic for future months.</p>
-[ad]
+<p>[ad]</p>
 <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238" crossorigin="anonymous"></script>
 <!-- inline_horizontal -->
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8076040302380238" data-ad-slot="9021194372" data-ad-format="auto" data-full-width-responsive="true">
@@ -286,7 +287,7 @@ window.Quarto = {
 <p>Time series decomposition helps to deconstruct the time series into several component like trend and seasonality for better visualization of its characteristics. Using time-series decomposition makes it easier to quickly identify a changing mean or variation in the data</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../assets/Decomposition_of_Time_Series.png" class="img-fluid figure-img"></p>
+<p><img src="Decomposition_of_Time_Series.png" class="img-fluid figure-img"></p>
 <figcaption>Decomposition_of_Time_Series</figcaption>
 </figure>
 </div>
@@ -296,7 +297,7 @@ window.Quarto = {
 <p>For accurate analysis and forecasting trend and seasonality is removed from the time series and converted it into stationary series. Time series data is said to be stationary when statistical properties like mean, standard deviation are constant and there is no seasonality. In other words statistical properties of the time series data should not be a function of time.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../assets/Stationarity.png" class="img-fluid figure-img"></p>
+<p><img src="Stationarity.png" class="img-fluid figure-img"></p>
 <figcaption>Stationarity</figcaption>
 </figure>
 </div>
@@ -310,8 +311,13 @@ window.Quarto = {
 </section>
 <section id="augmented-dickey-fuller-adf-test" class="level3">
 <h3 class="anchored" data-anchor-id="augmented-dickey-fuller-adf-test">Augmented Dickey Fuller (ADF) Test</h3>
-<p>I won’t go into the details of how this test works. I will concentrate more on how to interpret the result of this test to determine the stationarity of the series. ADF test will return ‘p-value’ and ‘Test Statistics’ output values. * <strong>p-value &gt; 0.05</strong>: non-stationary. * <strong>p-value &lt;= 0.05</strong>: stationary. * <strong>Test statistics</strong>: More negative this value more likely we have stationary series. Also, this value should be smaller than critical values(1%, 5%, 10%). For e.g.&nbsp;If test statistic is smaller than the 5% critical values, then we can say with 95% confidence that this is a stationary series</p>
-[ad]
+<p>I won’t go into the details of how this test works. I will concentrate more on how to interpret the result of this test to determine the stationarity of the series. ADF test will return ‘p-value’ and ‘Test Statistics’ output values.</p>
+<ul>
+<li><strong>p-value &gt; 0.05</strong>: non-stationary.</li>
+<li><strong>p-value &lt;= 0.05</strong>: stationary.</li>
+<li><strong>Test statistics</strong>: More negative this value more likely we have stationary series. Also, this value should be smaller than critical values(1%, 5%, 10%). For e.g.&nbsp;If test statistic is smaller than the 5% critical values, then we can say with 95% confidence that this is a stationary series</li>
+</ul>
+<p>[ad]</p>
 <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238" crossorigin="anonymous"></script>
 <!-- inline_horizontal -->
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8076040302380238" data-ad-slot="9021194372" data-ad-format="auto" data-full-width-responsive="true">
@@ -335,7 +341,7 @@ window.Quarto = {
 <p>A simple but often effective way to stabilize the variance across time is to apply a power transformation to the time series. Log, square root, cube root are most commonly used transformation techniques. Most of the time you can pick the type of growth of the time series and accordingly choose the transformation method. For. e.g.&nbsp;A time series that has a quadratic growth trend can be made linear by taking the square root. In case differencing don’t work, you may first want to use one of above transformation technique to remove the variation from the series.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../assets/Log_Transformation.png" class="img-fluid figure-img"></p>
+<p><img src="Log_Transformation.png" class="img-fluid figure-img"></p>
 <figcaption>Log_Transformation</figcaption>
 </figure>
 </div>
@@ -345,7 +351,7 @@ window.Quarto = {
 <p>In moving averages technique, a new series is created by taking the averages of data points from original series. In this technique we can use two or more raw data points to calculate the average. This is also called as ‘window width (w)’. Once window width is decided, averages are calculated from start to the end for each set of w consecutive values, hence the name moving averages. It can also be used for time series forecasting.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../assets/Moving_Average.png" class="img-fluid figure-img"></p>
+<p><img src="Moving_Average.png" class="img-fluid figure-img"></p>
 <figcaption>Moving_Average</figcaption>
 </figure>
 </div>
@@ -364,7 +370,7 @@ window.Quarto = {
 <p>In trailing moving average, instead of averaging over a window that is centered around a time period of interest, it simply takes the average of the last w values. For example, a trailing moving average with a window of 3 would be calculated as:</p>
 <p><span class="math display">\[TMA(t) = mean(t-2, t-1, t)\]</span></p>
 <p>TMA are useful for forecasting.</p>
-[ad]
+<p>[ad]</p>
 <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238" crossorigin="anonymous"></script>
 <!-- inline-square -->
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8076040302380238" data-ad-slot="3564352555" data-ad-format="auto" data-full-width-responsive="true">
@@ -405,7 +411,7 @@ window.Quarto = {
 <li>Unlike ACF, PACF only consider the direct effect between the points while determining the correlation</li>
 <li>In case of above fish price example PACF will determine the correlation between fish price for current month P(t) and two months ago P(t-2) by considering only P(t) and P(t-2) and ignoring P(t-1)</li>
 </ul>
-[ad]
+<p>[ad]</p>
 <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238" crossorigin="anonymous"></script>
 <!-- inline-square -->
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8076040302380238" data-ad-slot="3564352555" data-ad-format="auto" data-full-width-responsive="true">

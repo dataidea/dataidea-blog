@@ -9,7 +9,8 @@ categories: [Data Analysis]
 
 ![Photo by DATAIDEA](thumbnail.png)
 
-## Time Series Forecasting 
+This is part 3 of our Time Series Analysis Series, [Part 2](https://blog.dataidea.org/posts/time_series_analysis/) introduces you to doing time series analysis. The link to part 2 is [here](https://blog.dataidea.org/posts/time_series_analysis/)
+
 Forecasting refers to the future predictions based on the time series data analysis. Below are the steps performed during time series forecasting
 
 * Step 1: Understand the time series characteristics like trend, seasonality etc
@@ -78,3 +79,5 @@ Next part of this article we are going to analyze and forecast air passengers ti
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+
