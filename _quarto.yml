@@ -34,10 +34,12 @@ website:
             url: "https://blog.dataidea.org"
           - text: Forum
             url: "https://chat.whatsapp.com/GuCZRyJICgO3Y7MPvDQKhi"
+          - text: Movies
+            url: "https://movies.dataidea.org"
       - text: Contact
         href: "https://courses.dataidea.org/contact"
       - text: FPL
-        href: fpl.md
+        href: "https://fpl.dataidea.org"
       - icon: twitter
         href: https://twitter.com/datas_idea
 format:

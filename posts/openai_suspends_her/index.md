@@ -55,7 +55,7 @@ Adding to the speculation, OpenAI CEO Sam Altman posted the word "her" on X afte
 
 It remains unclear how OpenAI will resolve the concerns about Sky mimicking Johansson’s voice or prevent similar issues in the future. For more information on artificial intelligence developments, check out the experimental AI-made video game that failed.
 
-_Juma Shafara contributor with DATAIDEA. Follow him on Twitter @juma_shafara._
+Juma Shafara contributor with DATAIDEA. Follow him on Twitter @juma_shafara.
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238"
      crossorigin="anonymous"></script>
