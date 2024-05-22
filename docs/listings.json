@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/sklearn_unsupervised_learning/index.html",
       "/posts/openai_suspends_her/index.html",
       "/posts/time_series_analysis/index.html",
       "/posts/time_series_forecasting/index.html",
