@@ -157,7 +157,7 @@ iris_df.head()
 </table>
 </div>
 
-```
+```python
 # load the penguin dataset
 sns.get_dataset_names()
 ping_df = sns.load_dataset('penguins')
@@ -247,7 +247,7 @@ ping_df.head()
 </table>
 </div>
 
-```
+```python
 sns.scatterplot(data=ping_df, x='bill_length_mm', y='bill_depth_mm', hue='species')
 plt.title('Penguin Bill Depth against Bill Length per Species')
 plt.ylabel('Bill Depth')
