@@ -30,16 +30,16 @@ website:
         menu:
           - text: Courses
             url: "https://courses.dataidea.org/"
-          - text: Blog
-            url: "https://blog.dataidea.org"
           - text: Forum
             url: "https://chat.whatsapp.com/GuCZRyJICgO3Y7MPvDQKhi"
+          - text: French
+            url: "https://french.dataidea.org"
           - text: Movies
             url: "https://movies.dataidea.org"
+          - text: Football
+            url: "https://football.dataidea.org"
       - text: Contact
         href: "https://courses.dataidea.org/contact"
-      - text: FPL
-        href: "https://fpl.dataidea.org"
       - icon: twitter
         href: https://twitter.com/datas_idea
 format:
