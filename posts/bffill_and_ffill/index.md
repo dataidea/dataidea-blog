@@ -1,5 +1,5 @@
 ---
-title: bffill vs ffill
+title: Handling Missing Data in Pandas, When to Use `bfill` and `ffill` Methods
 author: "Juma Shafara"
 date: "2024-05-23"
 categories: [Data Analysis]
