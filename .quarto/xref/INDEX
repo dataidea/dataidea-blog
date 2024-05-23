@@ -127,5 +127,8 @@
   },
   "posts/sklearn_unsupervised_learning/index.md": {
     "index.html": "4c10d34a"
+  },
+  "posts/bffill_and_ffill/index.md": {
+    "index.html": "781ac09e"
   }
 }
