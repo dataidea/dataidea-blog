@@ -79,3 +79,11 @@ In summary, use `ffill` to carry forward the last known value to fill missing da
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+<div>
+<h2>You may also like:</h2>
+<a href="/posts/data_imputation/">
+<h4>Handling Missing Data</h4>
+![Handling Missing Data](../data_imputation/thumbnail.png)
+</a>
+</div>

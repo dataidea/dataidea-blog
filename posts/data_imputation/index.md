@@ -7,7 +7,7 @@ categories: [Data Analysis]
 
 ## Handling Missing Data
 
-![Photo by DATAIDEA](handling_missing_data.png)
+![Photo by DATAIDEA](thumbnail.png)
 
 ## Introduction:
 
@@ -538,3 +538,11 @@ jumashafara0@gmail.com / dataideaorg@gmail.com
         document.head.appendChild(adScript);
     })();
 </script>
+
+<div>
+<h2>You may also like:</h2>
+<a href="/posts/bffill_and_ffill/">
+<h4>Handling Missing Data in Pandas, When to Use `bfill` and `ffill` Methods</h4>
+![Handling Missing Data in Pandas, When to Use `bfill` and `ffill` Methods](../bffill_and_ffill/thumbnail.png)
+</a>
+</div>
