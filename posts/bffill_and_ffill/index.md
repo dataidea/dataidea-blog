@@ -20,6 +20,30 @@ The `bfill` (backward fill) and `ffill` (forward fill) methods are used in data 
 
 3. **Survey Data**: In survey data, if a respondent skips a question but answers the following ones, you might assume their previous answer holds until they provide a new one.
 
+**Example:**
+
+```python
+import pandas as pd
+
+# Sample data with missing values
+data = pd.Series([1, 2, None, 4, None, None, 7])
+filled_data = data.ffill()
+print(filled_data)
+```
+
+Output:
+
+```bash
+0    1.0
+1    2.0
+2    2.0
+3    4.0
+4    4.0
+5    4.0
+6    7.0
+dtype: float64
+```
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238"
      crossorigin="anonymous"></script>
 
@@ -44,6 +68,30 @@ The `bfill` (backward fill) and `ffill` (forward fill) methods are used in data 
 2. **Data Preparation**: In data preparation, backward filling can sometimes be used to prepare data for algorithms that require no missing values, ensuring that any gap is filled with the next available data point.
 
 3. **Interim Reporting**: When generating interim reports, you might use backward fill to assume that future values (like projected sales or stock levels) should be filled backward to reflect estimates.
+
+**Example:**
+
+```python
+import pandas as pd
+
+# Sample data with missing values
+data = pd.Series([1, 2, None, 4, None, None, 7])
+filled_data = data.bfill()
+print(filled_data)
+```
+
+Output:
+
+```bash
+0    1.0
+1    2.0
+2    4.0
+3    4.0
+4    7.0
+5    7.0
+6    7.0
+dtype: float64
+```
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238"
      crossorigin="anonymous"></script>
