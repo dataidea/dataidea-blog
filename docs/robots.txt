@@ -1,1 +1,1 @@
-Sitemap: https://blog.dataidea.org/dataidea-blog/sitemap.xml
+Sitemap: https://blog.dataidea.org/sitemap.xml
