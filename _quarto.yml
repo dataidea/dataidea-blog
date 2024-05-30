@@ -26,10 +26,14 @@ website:
             url: "https://dataidea.org/privacy_policy.html"
           - text: Terms of Service
             url: "https://dataidea.org/terms_of_service.html"
+      - text: Subjects
+        menu:
+          - text: Data Science
+            url: "https://science.dataidea.org/"
+          - text: Web Development 
+            url: "https://web.dataidea.org/"
       - text: Resources
         menu:
-          - text: Courses
-            url: "https://courses.dataidea.org/"
           - text: Forum
             url: "https://chat.whatsapp.com/GuCZRyJICgO3Y7MPvDQKhi"
           - text: French
