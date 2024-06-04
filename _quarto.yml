@@ -17,7 +17,7 @@ website:
   navbar:
     right:
       - text: Home
-        href: "https://www.dataidea.org/"
+        href: "https://blog.dataidea.org/"
       - text: About
         menu:
           - text: About Us
@@ -30,7 +30,7 @@ website:
         menu:
           - text: Data Science
             url: "https://science.dataidea.org/"
-          - text: Web Development 
+          - text: Web Development
             url: "https://web.dataidea.org/"
       - text: Resources
         menu:
@@ -51,3 +51,4 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    toc-title: Table of Contents

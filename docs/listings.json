@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/rethinking_chatgpt/index.html",
       "/posts/bffill_and_ffill/index.html",
       "/posts/sklearn_unsupervised_learning/index.html",
       "/posts/openai_suspends_her/index.html",

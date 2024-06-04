@@ -13,32 +13,25 @@ categories: [Data Analysis]
 
 Missing data is a common hurdle in data analysis, impacting the reliability of insights drawn from datasets. Python offers a range of solutions to address this issue, some of which we discussed in the earlier weeks. In this notebook, we look into the top three missing data imputation methods in Python—SimpleImputer, KNNImputer, and IterativeImputer from scikit-learn—providing insights into their functionalities and practical considerations. We'll explore these essential techniques, using the weather dataset.
 
-
 ```
 # install the libraries for this demonstration
 ! pip install dataidea==0.2.5
 ```
 
-
 ```python
-from dataidea.packages import * 
+from dataidea.packages import *
 from dataidea.datasets import loadDataset
 ```
 
 `from dataidea.packages import *` imports for us np, pd, plt, etc. `loadDataset` allows us to load datasets inbuilt in the dataidea library
 
-
 ```python
-weather = loadDataset('weather') 
+weather = loadDataset('weather')
 ```
-
 
 ```python
 weather
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -53,6 +46,7 @@ weather
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -132,15 +126,9 @@ weather
 </table>
 </div>
 
-
-
-
 ```python
 weather.isna().sum()
 ```
-
-
-
 
     day            0
     temperature    4
@@ -148,32 +136,28 @@ weather.isna().sum()
     event          2
     dtype: int64
 
-
-
 Let's demonstrate how to use the top three missing data imputation methods—SimpleImputer, KNNImputer, and IterativeImputer—using the simple weather dataset.
-
 
 ```python
 # select age from the data
 temp_wind = weather[['temperature', 'windspead']].copy()
 ```
 
-
 ```python
 temp_wind_imputed = temp_wind.copy()
 ```
 
 ## SimpleImputer from scikit-learn:
-   - **Usage**: SimpleImputer is a straightforward method for imputing missing values by replacing them with a constant, mean, median, or most frequent value along each column.
-   - **Pros**:
-     - Easy to use and understand.
-     - Can handle both numerical and categorical data.
-     - Offers flexibility with different imputation strategies.
-   - **Cons**:
-     - It doesn't consider relationships between features.
-     - May not be the best choice for datasets with complex patterns of missingness.
-   - **Example**:
 
+- **Usage**: SimpleImputer is a straightforward method for imputing missing values by replacing them with a constant, mean, median, or most frequent value along each column.
+- **Pros**:
+  - Easy to use and understand.
+  - Can handle both numerical and categorical data.
+  - Offers flexibility with different imputation strategies.
+- **Cons**:
+  - It doesn't consider relationships between features.
+  - May not be the best choice for datasets with complex patterns of missingness.
+- **Example**:
 
 ```python
 from sklearn.impute import SimpleImputer
@@ -186,13 +170,9 @@ temp_wind_simple_imputed_df = pd.DataFrame(temp_wind_simple_imputed, columns=tem
 
 Let's have a look at the outcome
 
-
 ```python
 temp_wind_simple_imputed_df
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -207,6 +187,7 @@ temp_wind_simple_imputed_df
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -266,18 +247,16 @@ temp_wind_simple_imputed_df
 </table>
 </div>
 
-
-
 ## KNNImputer from scikit-learn:
-   - **Usage**: KNNImputer imputes missing values using k-nearest neighbors, replacing them with the mean value of the nearest neighbors.
-   - **Pros**:
-     - Considers relationships between features, making it suitable for datasets with complex patterns of missingness.
-     - Can handle both numerical and categorical data.
-   - **Cons**:
-     - Computationally expensive for large datasets.
-     - Requires careful selection of the number of neighbors (k).
-   - **Example**:
 
+- **Usage**: KNNImputer imputes missing values using k-nearest neighbors, replacing them with the mean value of the nearest neighbors.
+- **Pros**:
+  - Considers relationships between features, making it suitable for datasets with complex patterns of missingness.
+  - Can handle both numerical and categorical data.
+- **Cons**:
+  - Computationally expensive for large datasets.
+  - Requires careful selection of the number of neighbors (k).
+- **Example**:
 
 ```python
 from sklearn.impute import KNNImputer
@@ -290,13 +269,9 @@ temp_wind_knn_imputed_df = pd.DataFrame(temp_wind_knn_imputed, columns=temp_wind
 
 If we take a look at the outcome
 
-
 ```python
 temp_wind_knn_imputed_df
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -311,6 +286,7 @@ temp_wind_knn_imputed_df
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -370,18 +346,16 @@ temp_wind_knn_imputed_df
 </table>
 </div>
 
-
-
 ## IterativeImputer from scikit-learn:
-   - **Usage**: IterativeImputer models each feature with missing values as a function of other features and uses that estimate for imputation. It iteratively estimates the missing values.
-   - **Pros**:
-     - Takes into account relationships between features, making it suitable for datasets with complex missing patterns.
-     - More robust than SimpleImputer for handling missing data.
-   - **Cons**:
-     - Can be computationally intensive and slower than SimpleImputer.
-     - Requires careful tuning of model parameters.
-   - **Example**:
 
+- **Usage**: IterativeImputer models each feature with missing values as a function of other features and uses that estimate for imputation. It iteratively estimates the missing values.
+- **Pros**:
+  - Takes into account relationships between features, making it suitable for datasets with complex missing patterns.
+  - More robust than SimpleImputer for handling missing data.
+- **Cons**:
+  - Can be computationally intensive and slower than SimpleImputer.
+  - Requires careful tuning of model parameters.
+- **Example**:
 
 ```python
 from sklearn.experimental import enable_iterative_imputer
@@ -393,15 +367,11 @@ temp_wind_iterative_imputed = iterative_imputer.fit_transform(temp_wind)
 temp_wind_iterative_imputed_df = pd.DataFrame(temp_wind_iterative_imputed, columns=temp_wind.columns)
 ```
 
-Let's take a look at the outcome 
-
+Let's take a look at the outcome
 
 ```python
 temp_wind_iterative_imputed_df
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -416,6 +386,7 @@ temp_wind_iterative_imputed_df
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -475,12 +446,9 @@ temp_wind_iterative_imputed_df
 </table>
 </div>
 
-
-
 ## Datawig:
 
 Datawig is a library specifically designed for imputing missing values in tabular data using deep learning models.
-
 
 ```python
 # import datawig
@@ -492,8 +460,8 @@ Datawig is a library specifically designed for imputing missing values in tabula
 These top imputation methods offer different trade-offs in terms of computational complexity, handling of missing data patterns, and ease of use. The choice between them depends on the specific characteristics of the dataset and the requirements of the analysis.
 
 ## Homework
-- Try out these techniques for categorical data
 
+- Try out these techniques for categorical data
 
 ## Credit
 
@@ -501,7 +469,7 @@ These top imputation methods offer different trade-offs in terms of computationa
 
 If you’re serious about learning Programming, Data Analysis with Python and getting prepared for Data Science roles, I highly encourage you to enroll in my Programming for Data Science Course, which I've taught to hundreds of students. Don’t waste your time following disconnected, outdated tutorials
 
-My Complete Programming for Data Science Course has everything you need in one place. 
+My Complete Programming for Data Science Course has everything you need in one place.
 
 The course offers:
 
