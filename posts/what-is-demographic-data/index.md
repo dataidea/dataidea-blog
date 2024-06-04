@@ -1,5 +1,5 @@
 ---
-title: Understanding and Utilizing Demographic Data
+title: What is Demographic Data, Understanding and Utilizing It
 author: "Juma Shafara"
 date: "2024-06-04"
 categories: [Data Analysis]
