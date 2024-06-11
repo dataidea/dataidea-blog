@@ -45,7 +45,7 @@ website:
       - text: Contact
         href: "https://www.dataidea.org/#contact"
       - icon: twitter
-        href: https://twitter.com/datas_idea
+        href: https://twitter.com/dataideaorg
 format:
   html:
     theme: cosmo
