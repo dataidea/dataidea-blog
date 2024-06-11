@@ -9,7 +9,7 @@
 <meta name="author" content="Juma">
 <meta name="dcterms.date" content="2024-06-11">
 
-<title>DATAIDEA - Who Will Win Euro 2024? The Opta Predictions</title>
+<title>DATAIDEA - Understanding the Cost Function in Linear Regression</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -177,9 +206,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Who Will Win Euro 2024? The Opta Predictions</h1>
+      <h1 class="title">Understanding the Cost Function in Linear Regression</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">EUROS</div>
+                <div class="quarto-category">Machine Learning</div>
+                <div class="quarto-category">Data Analysis</div>
               </div>
                   </div>
   </div>
@@ -213,9 +243,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul>
-  <li><a href="#favorites-to-win" id="toc-favorites-to-win" class="nav-link active" data-scroll-target="#favorites-to-win"><strong>Favorites to Win</strong></a></li>
-  <li><a href="#other-contenders" id="toc-other-contenders" class="nav-link" data-scroll-target="#other-contenders"><strong>Other Contenders</strong></a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><strong>Summary</strong></a></li>
+  <li><a href="#what-is-a-cost-function" id="toc-what-is-a-cost-function" class="nav-link active" data-scroll-target="#what-is-a-cost-function">What is a Cost Function?</a></li>
+  <li><a href="#linear-regression-recap" id="toc-linear-regression-recap" class="nav-link" data-scroll-target="#linear-regression-recap">Linear Regression Recap</a></li>
+  <li><a href="#the-role-of-the-cost-function" id="toc-the-role-of-the-cost-function" class="nav-link" data-scroll-target="#the-role-of-the-cost-function">The Role of the Cost Function</a></li>
+  <li><a href="#why-minimize-the-cost-function" id="toc-why-minimize-the-cost-function" class="nav-link" data-scroll-target="#why-minimize-the-cost-function">Why Minimize the Cost Function?</a></li>
+  <li><a href="#gradient-descent-an-optimization-technique" id="toc-gradient-descent-an-optimization-technique" class="nav-link" data-scroll-target="#gradient-descent-an-optimization-technique">Gradient Descent: An Optimization Technique</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/dataidea/dataidea-blog/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -228,57 +261,79 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="thumbnail.jpg" class="img-fluid figure-img"></p>
-<figcaption>Image by Opta</figcaption>
+<p><img src="thumbnail.png" class="img-fluid figure-img"></p>
+<figcaption>Image by DATAIDEA</figcaption>
 </figure>
 </div>
-<p>Euro 2024 is set to be a thrilling tournament, and the Opta Supercomputer’s pre-tournament predictions give us a fascinating insight into the likely outcomes. Here’s a summary of the key predictions and contenders:</p>
-<section id="favorites-to-win" class="level3">
-<h3 class="anchored" data-anchor-id="favorites-to-win"><strong>Favorites to Win</strong></h3>
-<ol type="1">
-<li><p><strong>England (19.9%)</strong></p>
-<ul>
-<li><strong>Key Players:</strong> Harry Kane, Jude Bellingham, Phil Foden</li>
-<li><strong>Group:</strong> Denmark, Serbia, Slovenia</li>
-<li><strong>Chances:</strong> England are favorites to win, with strong attacking talent. They have a high probability (95.4%) of reaching the last 16, and a significant chance of progressing to the quarter-finals (70.0%) and semi-finals (48.2%). They have a 19.9% chance of winning the tournament.</li>
-</ul></li>
-<li><p><strong>France (19.1%)</strong></p>
-<ul>
-<li><strong>Key Players:</strong> Kylian Mbappé, Antoine Griezmann</li>
-<li><strong>Group:</strong> Netherlands, other teams</li>
-<li><strong>Chances:</strong> France are close behind England as favorites. They have a 69.2% chance of reaching the quarter-finals and a 48.1% chance of making it to the semi-finals. Their probability of winning the tournament stands at 19.1%.</li>
-</ul></li>
-<li><p><strong>Germany (12.4%)</strong></p>
-<ul>
-<li><strong>Key Players:</strong> Manuel Neuer, Toni Kroos, Thomas Müller, Kai Havertz</li>
-<li><strong>Group:</strong> Other teams</li>
-<li><strong>Chances:</strong> Despite recent struggles, Germany are strong contenders with a home advantage. They have a 36.5% chance of reaching the semi-finals and a 12.4% chance of winning the tournament.</li>
-</ul></li>
-<li><p><strong>Spain (9.6%)</strong></p>
-<ul>
-<li><strong>Key Players:</strong> Álvaro Morata, other key players</li>
-<li><strong>Group:</strong> Italy, Croatia, Albania</li>
-<li><strong>Chances:</strong> Spain are seen as strong contenders with a 59.1% chance of reaching the quarter-finals. They have a 9.6% chance of winning the tournament.</li>
-</ul></li>
-<li><p><strong>Portugal (9.2%)</strong></p>
-<ul>
-<li><strong>Key Players:</strong> Cristiano Ronaldo, Bruno Fernandes</li>
-<li><strong>Group:</strong> Czech Republic, Turkey, Georgia</li>
-<li><strong>Chances:</strong> Portugal have a high likelihood (93.6%) of progressing from the group stage and a 33.6% chance of reaching the semi-finals. Their probability of winning is 9.2%.</li>
-</ul></li>
-</ol>
+<p>Linear regression is a fundamental algorithm in machine learning and statistics, used to model the relationship between a dependent variable and one or more independent variables. At the heart of linear regression lies the concept of the cost function, a crucial element that helps the model learn and make accurate predictions. In this article, I’ll get into what a cost function is, why it’s important, and how it works in the context of linear regression.</p>
+<section id="what-is-a-cost-function" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-cost-function">What is a Cost Function?</h3>
+<p>A cost function, also known as a loss function or error function, quantifies the error between predicted values and actual values. It is a mathematical function that the model aims to minimize during the training process. By minimizing the cost function, the model adjusts its parameters (weights and biases) to produce the most accurate predictions possible.</p>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-8076040302380238" data-ad-slot="8693891310">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 </section>
-<section id="other-contenders" class="level3">
-<h3 class="anchored" data-anchor-id="other-contenders"><strong>Other Contenders</strong></h3>
+<section id="linear-regression-recap" class="level3">
+<h3 class="anchored" data-anchor-id="linear-regression-recap">Linear Regression Recap</h3>
+<p>Before I go deep into the cost function, let me briefly revisit the basics of linear regression. The goal of linear regression is to find the best-fitting straight line through the data points, which can be represented by the equation:</p>
+<p><span class="math display">\[y = \beta_0 + \beta_1 x + \epsilon\]</span></p>
+<p>Where:</p>
 <ul>
-<li><strong>Netherlands (5.1%)</strong></li>
-<li><strong>Italy (5.0%)</strong></li>
-<li><strong>Belgium (4.7%)</strong></li>
+<li><span class="math inline">\(y\)</span> is the dependent variable (the outcome we’re trying to predict).</li>
+<li><span class="math inline">\(x\)</span> is the independent variable (the feature or input).</li>
+<li><span class="math inline">\(\beta_0\)</span> is the y-intercept (the value of <span class="math inline">\(y\)</span> when <span class="math inline">\(x\)</span> is zero).</li>
+<li><span class="math inline">\(\beta_1\)</span> is the slope of the line (the change in <span class="math inline">\(y\)</span> for a unit change in <span class="math inline">\(x\)</span>).</li>
+<li><span class="math inline">\(\epsilon\)</span> is the error term (the difference between the observed and predicted values).</li>
 </ul>
 </section>
-<section id="summary" class="level3">
-<h3 class="anchored" data-anchor-id="summary"><strong>Summary</strong></h3>
-<p>The Opta Supercomputer simulations highlight England and France as the top favorites to win Euro 2024, with Germany, Spain, and Portugal also having strong chances. The tournament promises intense competition with key matchups and potential surprises. Fans can look forward to an exciting summer of football as these top nations vie for European glory.</p>
+<section id="the-role-of-the-cost-function" class="level3">
+<h3 class="anchored" data-anchor-id="the-role-of-the-cost-function">The Role of the Cost Function</h3>
+<p>The cost function in linear regression measures how well the model’s predictions match the actual data. One of the most commonly used cost functions is the Mean Squared Error (MSE), which is defined as:</p>
+<p><span class="math display">\[\text{MSE}  = \frac{1}{2n} \sum_{i=1}^{n} \left( \hat{y}^{(i)} - y^{(i)} \right)^2\]</span></p>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(\text{MSE}\)</span> is the cost function.</li>
+<li><span class="math inline">\(n\)</span> is the number of training examples.</li>
+<li><span class="math inline">\(\hat{y}^{(i)}\)</span> is the predicted value for the <span class="math inline">\(i\)</span>-th training example, given by the hypothesis function <span class="math inline">\(\hat{y}\)</span>.</li>
+<li><span class="math inline">\(y^{(i)}\)</span> is the actual value for the <span class="math inline">\(i\)</span>-th training example.</li>
+<li><span class="math inline">\(\theta\)</span> represents the parameters of the hypothesis.</li>
+</ul>
+<p>The MSE calculates the average of the squares of the errors (the differences between actual and predicted values). Squaring the errors ensures that both positive and negative errors are treated equally and magnifies larger errors, making them more impactful on the cost function.</p>
+</section>
+<section id="why-minimize-the-cost-function" class="level3">
+<h3 class="anchored" data-anchor-id="why-minimize-the-cost-function">Why Minimize the Cost Function?</h3>
+<p>Minimizing the cost function is essential because it directly translates to improving the model’s accuracy. When the cost function is minimized, the predicted values are as close as possible to the actual values, indicating a well-fitting model. This process involves finding the optimal values for the model parameters (<span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span>).</p>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-8076040302380238" data-ad-slot="8693891310">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+<section id="gradient-descent-an-optimization-technique" class="level3">
+<h3 class="anchored" data-anchor-id="gradient-descent-an-optimization-technique">Gradient Descent: An Optimization Technique</h3>
+<p>To minimize the cost function, linear regression often employs an optimization technique called gradient descent. Gradient descent iteratively adjusts the model parameters in the direction that reduces the cost function. The update rules for the parameters are:</p>
+<p><span class="math display">\[\beta_0 = \beta_0 - \alpha \frac{\partial}{\partial \beta_0} \text{MSE}\]</span> <span class="math display">\[\beta_1 = \beta_1 - \alpha \frac{\partial}{\partial \beta_1} \text{MSE}\]</span></p>
+<p>Here:</p>
+<ul>
+<li><span class="math inline">\(\alpha\)</span> is the learning rate, a hyperparameter that controls the step size of each update.</li>
+<li><span class="math inline">\(\frac{\partial}{\partial \beta_0} \text{MSE}\)</span> and <span class="math inline">\(\frac{\partial}{\partial \beta_1} \text{MSE}\)</span> are the partial derivatives of the MSE with respect to <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span>, respectively.</li>
+</ul>
+<p>These partial derivatives (also called gradients) indicate the direction and magnitude of the steepest increase in the cost function. By moving in the opposite direction of the gradients, gradient descent reduces the cost function, gradually leading to the optimal parameter values.</p>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>The cost function is a fundamental concept in linear regression, serving as the guiding metric for model optimization. By quantifying the difference between predicted and actual values, the cost function enables the model to learn and improve its predictions through techniques like gradient descent. Understanding and minimizing the cost function is crucial for building accurate and reliable linear regression models, making it a cornerstone of predictive analytics and machine learning.</p>
+<div class="p-3">
+<p class="pb-1">
+Don’t miss out on any updates and developments! Subscribe to the DATAIDEA Newsletter it’s easy and safe.
+</p>
+<iframe src="https://embeds.beehiiv.com/5fc7c425-9c7e-4e08-a514-ad6c22beee74?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent; width: 100%;">
+</iframe>
+</div>
 
 
 </section>
