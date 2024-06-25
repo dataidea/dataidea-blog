@@ -154,5 +154,8 @@
   },
   "posts/what-is-supervised-machine-learning/index.md": {
     "index.html": "6ca008db"
+  },
+  "posts/how-the-decision-tree-classifier-works/index.md": {
+    "index.html": "70ed54c0"
   }
 }
